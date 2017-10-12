@@ -1,0 +1,47 @@
+
+{{ set(this, 'title', page.title | raw) }}
+{% set network = _Network.getNetworkData() %}
+{% set featuredMedia = '' %}
+{% if page.media['id'] is defined and page.media['id'] is not empty %}
+    {% set featuredMedia = _Media.getMediaUrl(page.media, page.media['width'], 400, {crop: 'fill'})  %}
+{% endif %}
+{% set isPage = 'content_box_page' in _Page.getBodyClass() %}
+{% set staticClass = 'static-page' %}
+{% if isPage %}
+    {% set staticClass = '' %}
+{%endif%}
+
+<div class="content__header" {% if featuredMedia is asdanot empty %}style="background-image:url({{featuredMedia}});" {%endif%}>
+    <div class="container">
+        <h1 class="content__header-heading">Conservation</h1>
+        <div class="content__header-button button__share" href="javascript:void(0)">
+            <span class="button__share-default">Share +</span>
+            <ul class="button__share-list">
+                <li class="button__share-item"><a href="javascript:void(0)" class="button__share-link button__share-link--google-plus"></a></li>
+                <li class="button__share-item"><a href="javascript:void(0)" class="button__share-link button__share-link--twitter"></a></li>
+                <li class="button__share-item"><a href="javascript:void(0)" class="button__share-link button__share-link--facebook"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="content__row">
+        <div class="sidebar">
+            <ul class="sidebar__navigation">
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link">2015 Swarovski WET Raffle</a></li>
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link sidebar__navigation-link--current">Get Involved in Conservation</a></li>
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link">Nest Boxes</a></li>
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link">Ramsar Philosohpy</a></li>
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link">Waterfowl Counts</a></li>
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link">Conservation & Hunting Magazine</a></li>
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link">WET Public Fund</a></li>
+                <li class="sidebar__navigation-item"><a href="#" class="sidebar__navigation-link">Scientific Research</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            {{page.content | raw}}
+        </div>
+    </div>
+</div>
+

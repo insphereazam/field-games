@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media(max-width:767px) {
+	.modal{z-index:999999}
+	#ModalNewArticle .modal-dialog, #ajax-modal .modal-dialog, #ModalNewCode .modal-dialog, #ModalNewClub .modal-dialog, #ModalNewBlog .modal-dialog, #ModalCoverImage .modal-dialog, #ModalSocial .modal-dialog, #ModalVideo .modal-dialog, #ModalImage .modal-dialog{max-width:94%;width:94%}
+	.modal-body .tab-content{padding:15px}
+	#ModalCoverImage .modal-body .nav-tabs > li > a{font-size:9px;padding:10px 7px}
+	.modal-body .controls-full .c9n-ippt, .blog-post-search .input-box .c9n-ippt{font-size:12px;line-height:30px;padding:8px 50px 8px 10px}
+	.modal-body .controls-full button{font-size:13px;width:auto;padding:8px 14px}
+	.blog-post-search .input-box button{font-size:13px;width:auto;padding:8px 22px}
+	.modal-body .inner-content{padding:20px 15px 40px;display:inline-block;width:100%}
+	.modal-body .controls-full{margin-bottom:10px}
+
+	/* Grid Thumbnails Height for Small Screens */
+	/*.themePage .smallerThumb .double .img-holder,*/
+	.themePage .smallerThumb .double .img-holder .lt-stacked-img .thumb135,
+	/*.themePage .smallerThumb .postgrid.double .dz-details,*/
+	.heroLists .postgrid.double .img-holder .lt-stacked-img .thumb135,
+	.featuresPage .RowTwoColOne .h630 > .inner .img-holder .thumb135,
+	.myCountryPage .themePage .RowOneColOne .double .img-holder .lt-stacked-img .thumb135,
+	.themePage .RowThreeColOne .h630 > .inner .img-holder .thumb135{max-height:180px;min-height:180px}
+	.MorePostsContainer.themePage .smallerThumb .double .img-holder{height:auto;max-height:inherit;min-height:inherit}
+	.blogProfilePicHolder .thumb135{max-height:250px;min-height:250px}
+	/*.copy, .dz-details p{font-size:11.5px !important;line-height:14px}*/
+	#hero .posts-excerpt .game-title/*, .double .cnLNTitle, .double li a .cnLNTitle, .fullwidth .cnLNTitle, .fullwidth li a .cnLNTitle, .postgridBody .cnLNTitle, .postgridBody li a .cnLNTitle, .h310 > .inner .cnLNTitle, .h630 > .inner .cnLNTitle*/{font-size:16px;line-height:20px}
+	.load-more-items .btn{display:inline-block;width:100%}
+	.load-more-items .btn > span, .load-more-items .btn .fa{float:none}
+	nav.transition-med li .search-form button{padding:18px 15px}
+    
+    .double .dz-details .caption, .postgridFooter .caption {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+	/* Article Lists */
+	.latestNewsList .img-thumbnail{width:25%}
+	.latestNewsList .description{padding-left:34%}
+}
+
+@media only screen and (min-device-width:501px) and (max-device-height:767px) {
+	/* Article Lists */
+	.latestNewsList .img-thumbnail{width:25%}
+	.latestNewsList .description{padding-left:30%}
+}
+
+@media(max-width:767px) {
+	html, body{overflow-x:hidden!important}
+	p, .content p{margin-bottom:15px}
+	.container{width:100%!important}
+	.select-wrapper select{padding:2px 6px}
+	.select-wrapper select > option{font-size:13px}
+	.weather-dropdown .select-wrapper::after, .changeLocation .select-wrapper::after{display:none}
+	.changeLocation .button-weather{display:block;width:100%;padding:8px 30px}
+	.postgrid .overlay, .latestNewsList a .overlay, .cnFeatures .overlay{opacity:1;filter:alpha(opacity=100);visibility:visible}
+	
+	/* Header */
+	.header{min-height:26px}
+	.header .container{padding:0px}
+	.hdr-highlights > ol > li.dropdown-weather{margin-right:10px}
+	.hdr-highlights > ol > li.dropdown-users{padding-left:10px}
+	.hdr-highlights > ol > li > a .fa{top:20px}
+	.hdr-highlights > ol > li.dropdown-weather > a .fa{top:28px}
+	.weather-dropdown{right:40px}
+	.header .logo{margin-left:60px}
+	
+	/* Article Lists */
+	.latestNewsList li, .latestNewsList li > a,
+	.withoutThumb .latestNewsList li > a,
+	.homePage .RowThreeColOne .withoutThumb .latestNewsList li > a{height:auto;min-height:126px}
+	.latestNewsList li.social .description{top:auto;transform:translateY(0px)}
+	
+	/* Hero Banner */
+	.cnFeatures.social .lt-stacked-img{margin:0px;padding:0px;height:199px}
+	.cnFeatures.social .thumb302{max-height:199px;min-height:199px}
+	#hero .cnFeatures.social .posts-excerpt{padding:0px;height:100%}
+	/*#hero .cnFeatures.social .posts-excerpt .copy{color:#ffffff}*/
+	.cnFeatures.social.hFull .posts-excerpt .dzBody{height:140px}
+	.cnFeatures.social.hFull .posts-excerpt .dzBody .img-thumbnail{width:100px;height:110px;margin-bottom:0px}
+	.cnFeatures.social.hFull .posts-excerpt .dzBody .dz-details{padding-left:115px}
+	.cnFeatures.social.hFull .socialCaption .postgridCallToAction{top:34px}
+	.homePage.home.index #hero .cnFeatures-lists .posts-grid .lt-stacked-img,
+	.homePage.home.index #hero .cnFeatures-lists .posts-grid .lt-stacked-img > .flexslider.welcome.t393,
+	.homePage.home.index #hero .cnFeatures-lists .posts-grid .lt-stacked-img > .flexslider.welcome.t393 .slide > .inside{height:199px;min-height:199px}
+	#hero .welcome.t393 .slide > .inside .btnRead, #hero .welcome.t393 .slide > .inside .btnPlay, #hero .welcome.t170 .slide > .inside .btnRead, #hero .welcome.t170 .slide > .inside .btnPlay{margin-top:0px}
+	
+	.lt-stacked-img{height:auto!important;min-height:inherit!important}
+	.homePage.home.index .RowTwoColOne .postgrid.double > li > .postgridHolder > .img-holder > .lt-stacked-img > .flexslider.welcome.t393,
+	.homePage.home.index .RowTwoColOne .postgrid.double > li > .postgridHolder > .img-holder > .lt-stacked-img > .flexslider.welcome.t393 .slide  >  .inside,
+	.homePage.home.index .RowFourColOne .postgrid.double > li > .postgridHolder > .img-holder > .lt-stacked-img > .flexslider.welcome.t393,
+	.homePage.home.index .RowFourColOne .postgrid.double > li > .postgridHolder > .img-holder > .lt-stacked-img > .flexslider.welcome.t393 .slide > .inside,
+	.search.fans-search .postgrid.double > li > .postgridHolder > .img-holder > .lt-stacked-img > .flexslider.welcome.t393,
+	.search.fans-search .postgrid.double > li > .postgridHolder > .img-holder > .lt-stacked-img > .flexslider.welcome.t393 .slide > .inside, .welcome.t260, .welcome.t260 .slide > .inside{height:170px;min-height:170px}
+	
+	.h310 > .inner .cnLNTitle, .h630 > .inner .cnLNTitle{margin-top:0px}
+	
+	/* Grid */
+	.homePage .RowOneColTwo .h310, .homePage .RowTwoColTwo .h310, .h310 > .inner .postgrid .postgridHolder, .h310 > .inner.social.withThumb .img-holder, .homePage .RowTwoColOne .postgrid li{height:auto}
+    
+	.homePage .RowTwoColOne .postgrid li .dz-details{height:auto;min-height: 240px; position:relative}
+	.postgrid.double .caption, .themePage .smallerThumb .postgrid.double .caption{bottom:0;top:auto}
+	
+    .homePage .RowTwoColOne .postgrid.double .caption,
+    .themePage .smallerThumb .postgrid.double .postgridHolder.withoutThumb .caption,
+    .postgrid.double .postgridHolder.withoutThumb .caption 
+    { position: relative; }
+    
+	/* Features Page */
+	.heroBg{position:absolute;top:-15px;max-height:inherit;height:auto;min-height:inherit;padding-bottom:100%;background-color:rgba(0,0,0,0.1)}
+	
+	
+	.featuresPage #hero, .myBlogPage #hero{max-height:2000px;height:auto;min-height:950px;overflow:inherit;margin:-125px auto 15px!important;clear:both}
+	.featuresPage .heroLists, .myBlogPage .heroLists{padding-top:135px;position:relative}
+	.featuresPage #hero > .cnFeatures-lists,
+	.featuresPage #hero > .cnFeatures-lists > .cnFeatures{max-height:inherit;min-height:inherit}
+	.featuresPage .breadcrumbArea, .myBlogPage .breadcrumbArea{margin-top:65px;padding:15px 20px}
+	/*.featuresPage #hero .thumb540{max-height:1280px;min-height:1280px;margin-top:-70px}
+	.myBlogPage #hero .thumb540{max-height:1280px;min-height:1280px;margin-top:-85px}*/
+	
+	.myBlogPage.home.index #hero .h434 > .inner .postgrid .postgridHolder {
+		height:auto;
+		position:relative;
+	}
+	.withoutBreadcrumb {margin-top:0px}
+	.featuresPage #hero .heroLists .widtgets, .myBlogPage #hero .heroLists .rtCol{margin-top:15px}
+	.featuresPage #hero .heroLists .postgrid .postgridHolder,
+	.featuresPage .RowTwoColOne .h630 > .inner,
+	.myBlogPage .RowOneColTwo .h310,
+	.myBlogPage .RowOneColTwo .h310 > .inner,
+	.myCountryPage .RowOneColTwo .h310,
+	.myBlogPage .RowOneColTwo .h310 > .inner,
+	.myCountryPage .RowOneColOne .postgridHolder,
+	.myCountryPage .themePage .RowOneColOne .double .img-holder,
+	.myCountryPage .themePage .RowOneColOne .double .img-holder .lt-stacked-img .thumb135,
+	.myCountryPage .themePage .RowOneColOne .double .dz-details,
+	.themePage .themePage .double .img-holder,
+	.themePage .themePage .double .img-holder .lt-stacked-img .thumb135,
+	.themePage .themePage .postgrid.double .dz-details,
+	.featuresPage .RowTwoColOne .h630 > .inner.social.withThumb.ytb .img-holder,
+	.featuresPage .RowTwoColOne .h630 > .inner.social.withoutThumb.ytb .img-holder,
+	.featuresPage .RowTwoColOne .h630 > .inner.social.withThumb.igrm .img-holder,
+	.themePage .RowThreeColOne .h630 > .inner,
+	.themePage .RowThreeColOne .h630 > .inner.social.withThumb.ytb .img-holder,
+	.themePage .RowThreeColOne .h630 > .inner.social.withoutThumb.ytb .img-holder,
+	.themePage .RowThreeColOne .h630 > .inner.social.withThumb.igrm .img-holder,
+    .themePage .RowFourColOne .postgrid li{height:auto}
+	.MorePostsContainer .h310, .MorePostsContainer .h310 > .inner{height:auto!important}
+	.h630 > .inner .postgrid .postgridHolder, .h310 > .inner .postgrid .postgridHolder{height:350px}
+	.myCountryPage .themePage .RowOneColOne .double .img-holder,
+	.myCountryPage .themePage .RowOneColOne .double .dz-details{height:250px}
+	.myCountryPage .RowOneColOne .postgridHolder .dz-content,
+	.themePage .themePage .postgrid.double .dzBody{height:150px}
+	.club-logo .club-logo-text, .club-logo span{font-size:15px}
+	.featuresPage .breadcrumbArea .club-logo small, .myBlogPage .breadcrumbArea .club-logo small{font-size:11.5px}
+	
+    .h310 > .inner.social.withThumb .img-holder,
+    .h310 > .inner.dairy .img-holder,
+    .h310 > .inner.sports .img-holder,
+    .h310 > .inner.tourism .img-holder,
+    .h310 > .inner.viticulture .img-holder,
+    .h310 > .inner.viti .img-holder,
+    .h310 > .inner.dairy .img-holder,
+    .h310 > .inner.equine .img-holder,
+    .h310 > .inner.water .img-holder,
+    .h310 > .inner.cropping .img-holder,
+    .h310 > .inner.livestock .img-holder,
+    .h310 > .inner.weather .img-holder,
+    .h310 > .inner.state .img-holder,
+    .h310 > .inner.horticulture .img-holder,
+    .h310 > .inner.gonebush .img-holder,
+    .h310 > .inner.social.withoutThumb .img-holder,
+    .h310 > .inner.social.withThumb.igrm .img-holder,
+    .h310 > .inner.social.withThumb.fbk .img-holder,
+    .h310 > .inner.dairy.withoutThumb .img-holder,
+    .h310 > .inner.sports.withoutThumb .img-holder,
+    .h310 > .inner.tourism.withoutThumb .img-holder,
+    .h310 > .inner.viticulture.withoutThumb .img-holder,
+    .h310 > .inner.viti.withoutThumb .img-holder,
+    .h310 > .inner.dairy.withoutThumb .img-holder,
+    .h310 > .inner.equine.withoutThumb .img-holder,
+    .h310 > .inner.water.withoutThumb .img-holder,
+    .h310 > .inner.cropping.withoutThumb .img-holder,
+    .h310 > .inner.livestock.withoutThumb .img-holder,
+    .h310 > .inner.weather.withoutThumb .img-holder,
+    .h310 > .inner.state.withoutThumb .img-holder,
+    .h310 > .inner.horticulture.withoutThumb .img-holder,
+    .h310 > .inner.gonebush.withoutThumb .img-holder,
+    .h310 > .inner.fbk.withoutThumb .img-holder {
+        height:auto;
+    }
+    
+    .h630 > .inner.dairy .img-holder,
+    .h630 > .inner.sports .img-holder,
+    .h630 > .inner.tourism .img-holder,
+    .h630 > .inner.viticulture .img-holder,
+    .h630 > .inner.viti .img-holder,
+    .h630 > .inner.dairy .img-holder,
+    .h630 > .inner.equine .img-holder,
+    .h630 > .inner.water .img-holder,
+    .h630 > .inner.cropping .img-holder,
+    .h630 > .inner.livestock .img-holder,
+    .h630 > .inner.weather .img-holder,
+    .h630 > .inner.state .img-holder,
+    .h630 > .inner.horticulture .img-holder,
+    .h630 > .inner.gonebush .img-holder,
+    .h630 > .inner.social .img-holder,
+    .h630 > .inner.social.withThumb.twtr .img-holder,
+    .h630 > .inner.social.withoutThumb.twtr .img-holder,
+    .h630 > .inner.social.withThumb.ytb .img-holder,
+    .h630 > .inner.social.withoutThumb.ytb .img-holder,
+    .h630 > .inner.social.withThumb.igrm .img-holder,
+    .myBlogPage.home.index .RowTwoColOne .h630 > .inner.social.withThumb.ytb .img-holder,
+    .myBlogPage.home.index .RowTwoColOne .h630 > .inner.social.withoutThumb.ytb .img-holder,
+    .myBlogPage.home.index .RowTwoColOne .h630 > .inner.social.withThumb.igrm .img-holder {
+        height: auto;
+    }
+    
+    /* Articles 434 Grid */
+    .h434 > .inner.dairy .img-holder,
+    .h434 > .inner.sports .img-holder,
+    .h434 > .inner.tourism .img-holder,
+    .h434 > .inner.viticulture .img-holder,
+    .h434 > .inner.viti .img-holder,
+    .h434 > .inner.dairy .img-holder,
+    .h434 > .inner.equine .img-holder,
+    .h434 > .inner.water .img-holder,
+    .h434 > .inner.cropping .img-holder,
+    .h434 > .inner.livestock .img-holder,
+    .h434 > .inner.weather .img-holder,
+    .h434 > .inner.state .img-holder,
+    .h434 > .inner.horticulture .img-holder,
+    .h434 > .inner.gonebush .img-holder,
+    .h434 > .inner.social .img-holder,
+    .h434 > .inner.social.withThumb.twtr .img-holder,
+    .h434 > .inner.social.withoutThumb.twtr .img-holder,
+    .h434 > .inner.social.withThumb.ytb .img-holder,
+    .h434 > .inner.social.withoutThumb.ytb .img-holder,
+    .h434 > .inner.social.withThumb.igrm .img-holder {
+        height:auto;
+    }
+    
+    .themePage .smallerThumb .double .postgridHolder.withoutThumb .img-holder,
+    .themePage .smallerThumb .double .postgridHolder.withoutThumb .img-holder .lt-stacked-img .thumb135,
+    .themePage .smallerThumb .postgrid.double .postgridHolder.withoutThumb .dz-details {
+        max-height:265px;
+        min-height:265px;
+    }
+    
+	/* Blog Page */
+	.blogProfilePicHolder{height:250px;margin-bottom:15px}
+	.blogProfileHolder .postgridFooter{height:auto}
+	.blogProfileHolder .postgridFooter [class^="col-"]{margin-bottom:15px!important}
+	.blogProfileHolder .postgridFooter [class^="col-"]:last-child{margin-bottom:0!important}
+	.myBlogPage .RowTwoColTwo .sqr-ads{margin-bottom:0px}
+	.hdr-controls > li > .button{margin-top:10px}
+	.hdr-controls > li > .button, .hdr-controls > li > a{padding:15px;}
+	
+	/* Article Page */
+	#article-banner .flex-direction-nav{margin-top:-36px}
+	.content-wrap{padding:0px;}
+	.article-posts-excerpt h4.borderedTitle{padding:30px 30px 0;margin-bottom:25px}
+	.article-posts-excerpt{padding:40px 25px 25px}
+	.SocialButtonsVertical > ul.SocialButtons > li, .SocialButtonsHorizontal > ul.SocialButtons > li{width:20%;height:49px}
+	.SocialButtonsVertical, .SocialButtonsBottom{border-bottom:1px solid #e1e1e1;height:51px}
+	.article-posts-excerpt .article-thumb, .article-posts-excerpt .article-thumb, .VideoAd{margin-bottom:30px}
+	.article-image-controls .btn-file .fa-picture-o, .myblog-adjust .fileupload-button-controls .btn-file .fa-picture-o{font-size:40px;font-style:normal!important}
+	.fileupload-button-controls .btn-file .fa-plus-circle, .fileupload-button-controls .btn-change .fa-edit, .fileupload-new{font-style:normal!important}
+	.article-image-controls .btn-file{padding:35px 0}
+	.myblog-adjust .article-thumb .fileupload-button-controls .btn-file{padding:20px 0}
+	.article-image-controls .fileupload-new, .myblog-adjust .article-thumb .fileupload-button-controls .full-text{font-size:15px}
+	
+	.myCountryPage .RowOneColTwo{margin-top:30px}
+	.welcome.t170, .welcome.t170 .slide > .inside{height:170px}
+	.welcome.t393 .slide > .inside .container{position:relative}
+	.welcome.t393 .slide > .inside .container,
+	.welcome.t393 .slide > .inside .container .overlay,
+	.welcome.t170 .slide > .inside .container .overlay{width:100%}
+	.welcome.t393 .slide > .inside .container .overlay,
+	.welcome.t170 .slide > .inside .container .overlay{left:0px;right:0px;z-index:999999;position:absolute}
+	.welcome.t393 .slide > .inside .btnRead,
+	.welcome.t393 .slide > .inside .btnPlay,
+	.welcome.t170 .slide > .inside .btnRead,
+	.welcome.t170 .slide > .inside .btnPlay{margin-top:-30px}
+	.welcome.t393, .welcome.t393 .slide > .inside{height:250px}
+	
+	/* Theme Page */
+	.themePage .themePage .row:first-child aside .widtgets{margin-top:30px}
+	.themePage .themePage .RowThreeColOne .h630 > .inner .postgrid,
+	.themePage .themePage .h630 > .inner .postgrid .postgridHolder{height: auto; min-height:365px}
+	.featuresPage .RowTwoColOne .h630 > .inner .img-holder .lt-stacked-img,
+	.themePage .RowThreeColOne .h630 > .inner .img-holder .lt-stacked-img{margin-top:0px}
+	.themePage .themePage.container .row.has-margin-bottom-25{margin-bottom:0px}
+	
+	.h630 > .inner .postgrid .postgridHolder, .h310 > .inner .postgrid .postgridHolder,
+	.h310 > .inner.social.withThumb.fbk .img-holder,
+	.h310 > .inner.fbk.withoutThumb .img-holder,
+	.h310 > .inner.withoutThumb .img-holder {
+		height:auto;
+	}
+	/*.h310.fullWidth .img-holder .dz-details {
+		height:190px;
+	}*/
+	.h310 > .inner .caption, .h630 > .inner .caption, .h630 > .inner .postgridFooter, .h434 > .inner .caption, .h434 > .inner .postgridFooter {
+		position:relative;
+	}
+}
+
+@media(max-width:480px) {
+	.welcome.t393, .welcome.t393 .slide > .inside, .welcome.t170, .welcome.t170 .slide > .inside, .welcome.t135, .welcome.t135 .slide > .inside{height:260px!important;max-height:260px!important;min-height:260px!important}
+}
+@media(min-width:481px) and (max-width:640px) {
+	.welcome.t393, .welcome.t393 .slide > .inside, .welcome.t170, .welcome.t170 .slide > .inside, .welcome.t135, .welcome.t135 .slide > .inside{height:320px!important;max-height:320px!important;min-height:320px!important}
+}
+@media(min-width:641px) and (max-width:767px) {
+	.welcome.t393, .welcome.t393 .slide > .inside, .welcome.t170, .welcome.t170 .slide > .inside, .welcome.t135, .welcome.t135 .slide > .inside{height:380px!important;max-height:380px!important;min-height:380px!important}
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	.article-posts-excerpt .article-thumb, .article-posts-excerpt .article-thumb, .VideoAd{margin-bottom:30px}
+	.article-image-controls .btn-file .fa-picture-o,.myblog-adjust .fileupload-button-controls .btn-file .fa-picture-o{font-size:60px}
+	.article-image-controls .btn-file{padding:45px 0}
+	.myblog-adjust .article-thumb .fileupload-button-controls .btn-file{padding:20px 0}
+	.article-image-controls .fileupload-new, .myblog-adjust .article-thumb .fileupload-button-controls .full-text{font-size:18px}
+	.postgrid.fullwidth .postgridHolder{display:inline-block;padding:20px 10px 20px}
+	
+	.themePage .postgrid.double .dz-details h4, .themePage .postgrid.double .dz-details p{width:100%}
+	/*.double .cnLNTitle, .double li a .cnLNTitle, .fullwidth .cnLNTitle, .fullwidth li a .cnLNTitle, .postgridBody .cnLNTitle, .postgridBody li a .cnLNTitle{font-size:18px}
+	.double .dz-details .copy, .no-profile .dz-details .copy, .fullwidth .dz-details .copy, .postgridBody .copy{font-size:14px}
+	.dz-details .caption p, .h310 > .inner .caption p, .h630 > .inner .caption p, .h434 > .inner .caption p{font-size:11px}*/
+	.RowOneColOne .mobileShareBtn{position:absolute;right:0px;margin-top:-2px;padding:0px}
+	.RowOneColOne .mobileShareBtn{position:absolute;right:0px;margin-top:-2px;padding:0px}
+	.myCountryPage .themePage .RowOneColOne .double .dz-details p.copy{margin-top:50px}
+	
+	.MorePostsContainer .h310, .MorePostsContainer .h310 > .inner{height:auto!important}
+}
+
+@media(min-width:768px) and (max-width:1199px) {
+	.article-image-controls .btn-file{padding:45px 0}
+	.latestNewsList .img-thumbnail{width:25%}
+	.latestNewsList .description{padding-left:38%;padding-top:0px}
+	/*.latestNewsList .cnLNTitle, .latestNewsList li a .cnLNTitle{font-size:14px}*/
+	.latestNewsList .game-code, .dz-details-header .game-code{margin-bottom:5px}
+	
+	/* Modal */
+	.modal-body .controls-full button{font-size:14px;width:auto;padding:8px 10px}
+	.blog-post-search .input-box button{font-size:18px;width:auto;padding:8px 18px}
+	.blog-post-search .input-box button .fa{margin-top:0px;float:left}
+	.modal-body .inner-content{padding:25px 20px 50px;display:inline-block;width:100%}
+        
+	.heroLists .h434 > .inner.social.withThumb.twtr .img-holder,
+	.heroLists .h434 > .inner.social.withoutThumb.twtr .img-holder,
+	.heroLists .h434 > .inner.social.withThumb.ytb .img-holder,
+	.heroLists .h434 > .inner.social.withoutThumb.ytb .img-holder,
+	.heroLists .h434 > .inner.social.withThumb.fbk .img-holder,
+	.heroLists .h434 > .inner.social.withoutThumb.fbk .img-holder,                
+	.heroLists .h434 > .inner.social.withThumb.igrm .img-holder {
+		height:auto;
+	}
+}

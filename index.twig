@@ -1,0 +1,183 @@
+{% set network = _Network.getNetworkData() %}
+
+{{ set(this, 'title', _Blog.getBlogTitle()) }}
+
+{% set limit = 3 %}
+{% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
+{% set articles = articlesArr.articles %}
+
+
+<!-- Start Home Banner -->
+<div class="banner" style="background-image:url({{network.templatePath}}/static/images/data/homepage-header.jpg);">
+    <div class="banner__content">
+        <img src="{{network.templatePath}}/static/images/logo.png" width="200">
+        <h1 class="banner__heading">Australia’s most surprising conservationists</h1>
+        <a href="/see-our-membership-benefits" class="banner__button">see our membership benefits</a>
+        <a href="/auth/signup" class="banner__button sign-up">Signup</a>
+    </div>
+</div>    
+
+<div class="banner__row">
+    <a href="/conservation" class="banner__col" style="background-image:url({{network.templatePath}}/static/images/data/conservation-home.jpg);">
+        <h2 class="banner__sub-heading">Conservation</h2>
+    </a>
+    <a href="/hunting" class="banner__col" style="background-image:url({{network.templatePath}}/static/images/data/hunting-home.jpg);">
+        <h2 class="banner__sub-heading">Hunting</h2>
+    </a>
+    <a href="/clay-target" class="banner__col" style="background-image:url({{network.templatePath}}/static/images/data/clay-target-home.jpg);">
+        <h2 class="banner__sub-heading">Clay Target</h2>
+    </a>
+</div>
+<!-- End Home Banner -->
+    
+
+<div class="section section--hunting">
+  <div class="section__content">
+    <div class="row">
+      <div class="col-two-thirds">
+        <h2 class="section__heading">Latest News</h2>
+      </div>
+      <div class="col-third">
+        <h2 class="section__heading">Events</h2>
+      </div>
+    </div>
+    <div class="row">
+        {% if articles|length > 0 %}
+            {% for i in 0..1 %}
+                {% if articles[i] %}
+                    {{this.render('partials/_single-article.twig', {article: articles[i], 'position': (i+1), containerClass: 'col-third'}) | raw}}
+                {% endif %}
+            {% endfor %}
+       {% endif %}
+        
+       {% set eventList = _Event.getEvents({'limit' : 3, 'offset' : 0}) %}
+       <div class="col-third-short">
+           {% if eventList | length > 0 %}
+           {% for i in 0..2 %}
+               {% if eventList[i] is defined %}
+                   <a href="{{eventList[i].url}}" class="card card__event card__event--small">
+                       <div class="card__category">Event</div>
+                       <div class="card__content">
+                           <h1 class="card__heading">{{eventList[i].title | truncate(13) | raw}}</h1>
+                           <p class="card__text">{{eventList[i].excerpt | raw}}</p>
+                           
+                           {% set startTime = eventList[i].startDate | date('h:i A') %}
+                           {% set endTime = eventList[i].endDate | date('h:i A')%}
+                           {% if eventList[i].startDate | date('Y-m-d') != eventList[i].endDate | date('Y-m-d') %}
+                               {% set startTime = eventList[i].startDate | date('d/m h:i A') %}
+                               {% set endTime = eventList[i].endDate | date('d/m h:i A') %}
+                           {% endif%}
+                           {% if eventList[i].startDate == eventList[i].endDate or eventList[i].endDate is empty %}
+                            {% set endTime = "" %}
+                           {% endif%}
+                           <div class="card__event">
+                               <div class="card__event-calendar">
+                                   <div class="card__event-date">{{ eventList[i].startDate | date('d') }}</div>
+                                   <div class="card__event-month">{{ eventList[i].startDate | date('M') }}</div>
+                               </div>
+                               <div class="card__event-time">{{startTime}} {% if endTime is not empty %} - {{endTime}} {% endif%}</div>
+                               <div class="card__event-location">{{eventList[i].venue | raw}}</div>
+                           </div>
+                       </div>
+                   </a>
+               {% endif %}
+           {% endfor %}
+           {% else %}
+               <p class="no-data">No events found</p>
+           {% endif%}
+       </div>
+               
+       
+       {% if articles|length > 0 %}
+            {% for i in 2..4 %}
+                {% if articles[i]  is defined %}
+                    {{this.render('partials/_single-article.twig', {article: articles[i], 'position': (i+1), containerClass: 'col-third'}) | raw}}
+                {% endif %}
+            {% endfor %}
+       {% endif %}
+    </div>
+    <div class="row">
+        {% if articles|length > 0 %}
+            {% for i in 5..7 %}
+                {% if articles[i]  is defined %}
+                    {{this.render('partials/_single-article.twig', {article: articles[i], 'position': (i+1), containerClass: 'col-third'}) | raw}}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </div>
+  </div>
+</div>
+<div class="section section--feature" style="background-image:url({{network.templatePath}}/static/images/data/article-35.jpg);">
+  <div class="section__content">
+    <div class="row">
+      <div class="col-two-thirds">
+        <h2 class="section__heading section__heading--feature">Field & Game Magazine</h2>
+      </div>
+      <div class="col-third">
+        <a href="#" class="section__heading section__heading--link">Access Premium content</a>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-half">
+            <a href="#" class="card card__news">
+                <div class="card__image" style="background-image:url({{network.templatePath}}/static/images/data/feature-01.jpg)"></div>
+                <div class="card__category">Premium article</div>
+                <div class="card__content">
+                    <h1 class="card__heading">Article with an image</h1>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="card__caption">
+                        <div class="card__author">John Hodges</div>
+                        <div class="card__date">5 Oct 2015</div>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+        <div class="col-half">
+            <a href="#" class="card card__news">
+                <div class="card__image" style="background-image:url({{network.templatePath}}/static/images/data/feature-02.jpg)"></div>
+                <div class="card__category">Premium article</div>
+                <div class="card__content">
+                    <h1 class="card__heading">Article with an image</h1>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <div class="card__caption">
+                        <div class="card__author">John Hodges</div>
+                        <div class="card__date">5 Oct 2015</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+    <div class="section__content">
+        <div class="row">
+            {% set homeAbout = _Page.getPageData('home-about-field-game')%}
+            {% if homeAbout is not empty %}
+                <div class="section__text">
+                    {{homeAbout.content | raw}}
+                </div>
+            {% endif%}
+
+            {% set homeEducation = _Page.getPageData('home-education')%}
+            {% if homeEducation is not empty %}
+                <div class="section__text">
+                    {{homeEducation.content | raw}}
+                </div>
+            {% endif%}
+        </div>
+    </div>
+</div>
+
+<div class="section section--update" style="background-image:url({{network.templatePath}}/static/images/data/article-35.jpg);">
+  <div class="section__content">
+    <h2 class="section__heading--update">Want the latest updates and events?</h2>
+    <form class="form__subscribe" action="javascript:;" method="post">
+        <input class="input__text--large" id="subscriptionEmail" type="email" required="required" placeholder="Email address" oninvalid="this.setCustomValidity('Please Enter valid email')">
+        <input class="button button--large" id="subscriptionBtn" type="submit" value="Subscribe">
+    </form>
+  </div>
+</div>
+

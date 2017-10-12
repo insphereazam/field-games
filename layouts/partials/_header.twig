@@ -1,0 +1,67 @@
+{% set logo = network.templatePath~'/static/images/logo.png'%}
+{% set logoUrl = network.networkLogoLinkUrl %}
+{% if network.logoMedia | length > 0 %}
+    {% set logo = _Media.getMediaUrl(network.logoMedia, 177, 65, {'crop': 'limit'} )%}
+{% endif %}
+{% set menuItems = blogData.blogHeaderMenu %}
+<div class="container">
+  <a class="header__logo" href="{{logoUrl}}" style="background-image: url({{logo}})"></a>
+  <ul class="header__navigation-list">
+    {% for i in 0..(menuItems |length - 1) %}
+        {% if menuItems[i] is defined %}
+            {% set activeClass = (menuItems[i].link == _AppHelper.getServerUrl()) ? 'header__navigation-link--selected' : ''%}
+            {% set externalClass = (menuItems[i].isExternal) ? 'external-link' : '' %}
+            <li class="header__navigation-item">
+                <a href="{{menuItems[i].link |raw}}" {% if menuItems[i].target != "" %}target="{{menuItems[i].target}}"{% endif %} class="header__navigation-link {{activeClass}} {{externalClass}}">
+                {{ ((menuItems[i].label is empty) ? ((menuItems[i].pageTitle is empty)? menuItems[i].blogTitle : menuItems[i].pageTitle) : menuItems[i].label )}} 
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+  <ul class="header__navigation-list header__navigation-list--right">
+    <li class="header__navigation-item"><a href="javascript:;" class="header__navigation-link header__navigation-link--dark header__navigation-link--search" id="search">Search</a></li>
+    <li class="header__navigation-item"><a href="javascript:;" class="header__navigation-link header__navigation-link--dark header__navigation-link--member-area" id="contact">Member Area</a></li>
+  </ul>
+
+  <ul class="header__navigation-list header__navigation-list--responsive">
+    <li class="header__navigation-item">
+      <a href="#" class="header__navigation-link header__navigation-link--profile" id="profile-responsive">
+        <div class="header__navigation-link--profile-image" style="background-image: url({{network.templatePath}}/static/images/data/avatar-02.jpg)"></div>
+      </a>
+    </li>
+    <li class="header__navigation-item"><a href="javascript:;" class="header__navigation-link header__navigation-link--responsive" id=""></a></li>
+  </ul>
+
+      <!-- search elements -->
+      <div class="header__search">
+          <div class="header__search-row">
+              <div class="header__search-text">
+                  <input type="text" class="header__search-input" placeholder="Search">
+              </div>
+              <div class="header__search-close"></div>
+          </div>
+      </div>
+      <!-- end search elements-->
+</div>
+      
+<!-- sidebar navigation templates -->
+<div class="side-navigation">
+  <ul class="side-navigation__list">
+      {% for i in 0..(menuItems |length - 1) %}
+        {% if menuItems[i] is defined %}
+            {% set activeClass = (menuItems[i].link == _AppHelper.getServerUrl()) ? 'side-navigation__link--selected' : ''%}
+            {% set externalClass = (menuItems[i].isExternal) ? 'external-link' : '' %}
+            <li class="side-navigation__item">
+                <a href="{{menuItems[i].link |raw}}" {% if menuItems[i].target != "" %}target="{{menuItems[i].target}}"{% endif %} class="side-navigation__link {{activeClass}} {{externalClass}}">
+                {{ ((menuItems[i].label is empty) ? ((menuItems[i].pageTitle is empty)? menuItems[i].blogTitle : menuItems[i].pageTitle) : menuItems[i].label )}} 
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+  <ul class="side-navigation__list side-navigation__list--right">
+    <li class="side-navigation__item"><a href="#" class="side-navigation__link side-navigation__link--dark side-navigation__link--search" id="search">Search</a></li>
+    <li class="side-navigation__item"><a href="#" class="side-navigation__link side-navigation__link--dark header__heading-link--contact" id="contact">Contact</a></li>
+  </ul>
+</div>

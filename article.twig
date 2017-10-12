@@ -1,0 +1,138 @@
+{% set network = _Network.getNetworkData() %}
+<!-- start article Sub Header -->
+<div class="sub_header">
+  <div class="sub_header__container">
+    <div class="sub_header--left">
+      <div class="sub_header__heading sub_header__heading--hunting">
+        <a href="/">Hunting</a>
+      </div>
+      <div class="sub_header__breadcrumb">
+        <a href="/" class="sub_header__breadcrumb-link">Path 1</a>
+        <a href="/" class="sub_header__breadcrumb-link">Path 2</a>
+        <a href="/" class="sub_header__breadcrumb-link">featured article with image</a>
+      </div>
+    </div>
+    <div class="sub_header--right">
+      <a href="/" class="sub_header__button sub_header__button--hunting">Follow Hunting +</a>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+<div class="news">
+  <div class="news__header news__header--hunting">
+    <div class="news__header-category">Hunting</div>
+    <h1 class="news__header-heading">Featured Article with Image</h1>
+
+    <div class="news__header-caption">
+      <a href="#" class="news__article-avatar" style="background-image:url({{network.templatePath}}/static/images/data/avatar-03.jpg);"></a>
+      <a href="#" class="news__article-author">Jenny Rosenberg</a>
+      <div class="news__article-date">22 October</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="news__slides">
+      <div class="slides">
+        <div class="news__slide slide" data-thumbnail="{{network.templatePath}}/static/images/data/thumbnail-full-article-01.png" style="background-image: url(images/data/article-01.jpg)">
+          <div class="news__slide-caption">
+            <h1 class="news__slide-caption-heading">Justin Henningham says his final goodbyes to his favourite beach.</h1>
+            <p>Getty Images / Photographer: Jenny Garth</p>
+          </div>
+        </div>
+        <div class="news__slide slide" data-thumbnail="{{network.templatePath}}/static/images/data/thumbnail-article-01.png" style="background-image: url(images/data/article-12.jpg)">
+          <div class="news__slide-caption">
+            <h1 class="news__slide-caption-heading">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</h1>
+            <p>Getty Images / Photographer: Jenny Garth</p>
+          </div>
+        </div>
+        <div class="news__slide slide" data-thumbnail="{{network.templatePath}}/static/images/data/thumbnail-article-02.png" style="background-image: url(images/data/article-28.jpg)">
+          <div class="news__slide-caption">
+            <h1 class="news__slide-caption-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</h1>
+            <p>Getty Images / Photographer: Jenny Garth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news__social">
+      <a href="#" class="news__social-link news__social-link--facebook">Share</a>
+      <a href="#" class="news__social-link news__social-link--twitter">Share</a>
+      <a href="#" class="news__social-link news__social-link--google-plus">Share</a>
+      <a href="#" class="news__social-link news__social-link--mail">145 Likes</a>
+      <a href="#" class="news__social-link news__social-link--comments">23 Comments</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="news__main">
+      <div class="news__article">
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in pretium ipsum. Ut in sem vitae neque ornare pretium. Consectetur adipiscing elit. </blockquote>
+
+        <p>Fusce vel justo magna. Etiam orci mi, pharetra eu aliquam sit amet, dapibus vitae sapien. Pellentesque eget sapien felis. Cras eleifend massa at mauris suscipit dictum. Mauris auctor eget leo a fringilla. Aliquam erat volutpat. Nullam vel justo magna rutrum ut eros at lacinia. </p>
+
+        <img class="news__article-image" src="{{network.templatePath}}/static/images/data/article-25.jpg">
+
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in pretium ipsum. Ut in sem vitae neque ornare pretium. Consectetur adipiscing elit.</blockquote>
+
+        <p>Fusce vel justo magna. Etiam orci mi, pharetra eu aliquam sit amet, dapibus vitae sapien. Pellentesque eget sapien felis. Cras eleifend massa at mauris suscipit dictum. Mauris auctor eget leo a fringilla. Aliquam erat volutpat. Nullam vel justo magna rutrum ut eros at lacinia. </p>
+
+        <img class="news__article-image" src="{{network.templatePath}}/static/images/data/article-27.jpg">
+
+        <p>Aliquam erat volutpat. Nullam rutrum ut eros at lacinia. Pellentesque elementum est in semper rhoncus. Nunc tristique erat arcu, sit amet fermentum enim mattis ut. Duis luctus tincidunt varius.</p>
+
+        <?php require "partials/cards/_twitter-01.php" ?>
+
+        <p>Aliquam erat volutpat. Nullam rutrum ut eros at lacinia. Pellentesque elementum est in semper rhoncus. Nunc tristique erat arcu, sit amet fermentum enim mattis ut. Duis luctus tincidunt varius.</p>
+
+        <div class="news__article-caption">
+          <a href="#" class="news__article-avatar" style="background-image:url({{network.templatePath}}/static/images/data/avatar-03.jpg);"></a>
+          <a href="#" class="news__article-author">Jenny Rosenberg</a>
+          <div class="news__article-date">22 October</div>
+        </div>
+      </div>
+      <div class="news__social news__social--horizontal">
+        <a href="#" class="news__social-link news__social-link--facebook">Share</a>
+        <a href="#" class="news__social-link news__social-link--twitter">Share</a>
+        <a href="#" class="news__social-link news__social-link--google-plus">Share</a>
+        <a href="#" class="news__social-link news__social-link--mail">145 Likes</a>
+        <a href="#" class="news__social-link news__social-link--comments">23 Comments</a>
+      </div>
+    </div>
+    <div class="news__sidebar">
+        <a href="#" class="card card__announcement">
+            <img style="width: 300px;" class="card__announcement-image" src="{{network.templatePath}}/static/images/data/announcement-03.jpg">
+        </a>
+        
+      <div class="card card__header">Upcoming Events</div>
+      <a href="#" class="card card__news">
+          <div class="card__image" style="background-image:url({{network.templatePath}}/static/images/data/article-01.jpg)"></div>
+          <div class="card__category">Hunting</div>
+          <div class="card__content">
+              <h1 class="card__heading">Best dogs breeds for hunting</h1>
+              <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <div class="card__caption">
+                  <div class="card__author">John Hodges</div>
+                  <div class="card__date">5 Oct 2015</div>
+              </div>
+          </div>
+      </a>
+      
+      <a href="#" class="card card__news">
+          <div class="card__image" style="background-image:url({{network.templatePath}}/static/images/data/article-04.jpg)"></div>
+          <div class="card__category">Hunting</div>
+          <div class="card__content">
+              <h1 class="card__heading">Article with an image</h1>
+              <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="card__caption">
+                  <div class="card__author">John Hodges</div>
+                  <div class="card__date">5 Oct 2015</div>
+              </div>
+          </div>
+      </a>
+      
+      <a href="#" class="card card__announcement">
+          <img style="width: 300px;" class="card__announcement-image" src="{{network.templatePath}}/static/images/data/announcement-09.jpg">
+      </a>
+    </div>
+  </div>
+</div>

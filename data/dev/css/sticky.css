@@ -1,0 +1,29 @@
+.toolbar-navbar.fixed {
+	width:100%;
+	z-index:9999;
+	padding:0px 0px;
+	margin-top:0px;
+	position:fixed !important;
+	border-bottom: 1px solid rgba(0,0,0,0);
+	box-shadow: 0 2px 1px rgba(0,0,0,0);
+	background: none repeat scroll 0 0 rgba(0,0,0,0);
+}
+.toolbar-navbar.fixed #toolbar {
+	width:87%;
+	margin:0px;
+	padding-top:24px;
+	padding-left:27%;
+	padding-right:25%;
+	/*width:calc(100% - 400px);*/
+}
+.toolbar-navbar.fixed #toolbar .btn-group {
+	margin-right:4px;
+	padding-right:4px;
+}
+.toolbar-navbar.fixed #toolbar .btn-group .btn {
+	color:#898989;
+	padding:8px 7px;
+}
+.toolbar-navbar.fixed #toolbar .btn-group .btn.active {
+	color: #636363;
+}

@@ -1,0 +1,494 @@
+.footer__social-link--linkedin {
+    background-image: url("./images/icons/social-linkedin.svg");
+}
+
+.news__social-link--email {
+    background-color:#fff;
+    background-image: url("./resources/images/email.png");
+    background-position: 50% 30px;
+}
+
+/*
+ * For Responsive Home Page issue Fixed
+ * @date : 24 feb 2016
+ * @author : Pawan Kumar
+ */
+
+/**
+ * Card Description & Caption Overlapping 
+ */
+.card p {
+    margin-bottom: 30px;
+}
+.membership {
+    position: relative;
+}
+.membership__caption {
+    margin: 20px auto; 
+}
+.membership__heading_step1 {
+    margin-bottom: 40px;
+}
+
+body.auth .lost_details {
+    margin-top: 30px;
+    color: #737373;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom:10px;
+}
+body.auth div.additionalInfo {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 360px) {
+    .homePage .input__text--large {
+        width:100%;
+        margin-bottom:20px;
+    }
+    .homePage .button--large {
+        width:100%;  
+    }
+    .homePage .section__text {
+        width:100%;
+    }
+    .homePage .sign-up {
+        margin-top:10px;
+    }
+}
+
+/*
+ * Login form Media css
+ */
+@media (min-width:360px) and (max-width:800px) {
+    .auth .membership__input {
+        margin-right : 10px;
+    }
+    .auth .button {
+        margin-right:10px;
+    }
+}
+
+@media (max-width:360px) {
+    .auth.sign-in .button{
+        margin-right :0px;
+    }
+    .auth.sign-in .membership__sign-up, .auth .member_login--responsive {
+        padding: 10px;
+    }
+    .auth.sign-in .membership__sign-up .button:first-child, .auth .member_login--responsive .button:first-child{
+        margin-bottom:10px;
+    }
+}
+
+/**
+ * Sign up Page Media Css
+ */
+@media (max-width:800px) {
+    .auth.signup .large_input_block > .form-group {
+        margin-right:10px;
+    }
+
+}
+@media (max-width:767px) {
+    .auth.signup .large_input_block > .form-group {
+        margin-right:0px;
+    }
+    body.page .content__header-heading {
+        font-size: 35px;
+    }
+    body.page .main {
+        padding: 10px;
+    }
+    body.signup div.membership h1.membership__heading {
+        margin: 30px auto;
+    }
+    body.signup .membership__progress-item {
+        padding: 10px 20px;
+    }
+    body.article div.news__article {
+        padding: 30px 15px;
+    }
+    body.article div.event-detail__content {
+        padding: 30px 15px;
+    }
+}
+@media (max-width:360px) {
+    .auth.signup .membership__cost {
+        width:100%;
+    }
+    .auth.signup .button {
+        margin-right:0px;
+        margin-bottom: 10px;
+        width:100%;
+    }
+}
+/**
+ *  Article / Event Details Media Css
+ */
+
+@media (max-width:360px) {
+    .article  .event-detail__heading {
+        line-height:50px;
+    }
+    .article .news__slides {
+        width:100%;
+    }
+    .article .top_social_link {
+        display:none;
+    }
+}
+
+@media (max-width:768px) {
+    .page .sidebar {
+        width:100%;
+    }
+    .page .main {
+        width:100%;
+    }
+}
+
+/**
+ * Contact Page Media Css
+ **/
+
+@media (max-width:980px) {
+    .contact .contact__details-col:last-child {
+        padding : 0px 40px;
+        border-right : none;
+    }
+    .contact .contact__sidebar {
+        width:100%;
+    }
+    .contact .contact__card {
+        width:45%;
+        margin-right:40px;
+        float:left;
+    }
+}
+
+@media (max-width:800px) {
+    .contact .contact__card {
+        width:100%; 
+    }
+}
+
+/**
+ * Event Listing Page Media Css
+ */
+.event .event-list__months {
+    width:100%; 
+}
+
+@media (max-width:980px) {
+    .event .event-list__month:link, .event-list__month:visited, .event-list__month {
+        padding:0px 20px;
+    }
+}
+@media (max-width:800px) {
+    .event .event-list__month:link, .event-list__month:visited, .event-list__month {
+        padding:0px 10px;
+    }
+}
+
+.event-date-mobile {
+    display: none;
+    padding-left: 30px;
+}
+@media (max-width:767px) {
+    .event .event-list__month:link, .event-list__month:visited, .event-list__month {
+        padding:0px 6px;
+    }
+    .event .event-list__months {
+        width:80%; 
+        margin-left :30px;
+    }
+    .event .event-list__arrow {
+        width:30px;
+    }
+    .event .event-item__col-1, .event-item__col-2 {
+        width:100%;
+        display:block;
+    }
+    .event .event-item__col-2 {
+        border-left:none;
+        border-top: 1px solid hsl(210, 3%, 88%);
+    }
+}
+@media (max-width:360px) {
+    .event-item__calendar {
+        display: none;
+    }
+    .event-item__col-1 {
+        padding-left: 30px;
+    }
+    .event-date-mobile {
+        display: block;
+    }
+}
+
+.header__search-input--responsive {
+    font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
+    letter-spacing: 0.5px;
+    background-image: url("images/icons/search-black.svg");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: medium none;
+    font-size: 14px;
+    height: 40px;
+    line-height: 17px;
+    margin: 0px;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+@media (max-width:1170px) {
+    .side-navigation {
+        overflow-y: scroll;
+    }
+    .side-navigation__list.side-navigation__list--right {
+        margin-top: 0px;
+    }
+    .header__navigation-link--member-area:hover {
+        color:#a0b477;
+    }
+}
+
+.header__navigation-link--member-area--responsive, .header__navigation-link--member-area--responsive:link, .header__navigation-link--member-area--responsive:visited, .header__navigation-link--member-area--responsive:active {
+        background-image: url(images/icons/member.svg);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        padding-left: 35px;
+        background-position: 10px 50%; 
+}
+
+@media (max-width:768px) {
+    .card__image {
+        height:200px;
+    }
+}
+
+/*  @media (min-width: 768px) and (max-width: 1170px) {
+    .header__navigation-list {
+      display: none; 
+    } 
+  }*/
+ 
+ .header__navigation-list--responsive {
+    display:none;
+}
+  @media (max-width: 991px) {
+/*    .header__navigation-list {
+      display: none !important; 
+    } */
+    .header__navigation-list--responsive {
+        display:block !important;
+    }
+  }
+  @media (min-width: 992px) {
+        .header__navigation-list {
+            display: block !important; 
+       }
+       .header__navigation-list--responsive {
+            display:none !important;
+        }
+  }
+  @media (max-width: 1114px) {
+      .header__navigation-link--search span.space, .header__navigation-link--member-area span.space {
+          display:block !important;
+      } 
+      .header__navigation-link--search span.txt, .header__navigation-link--member-area span.txt {
+          display:none !important;
+      }
+  }
+ @media (min-width: 1115px) {
+      .header__navigation-link--search span.space, .header__navigation-link--member-area span.space {
+          display:none !important;
+      }
+      .header__navigation-link--search span.txt, .header__navigation-link--member-area span.txt {
+          display:block !important;
+      }
+}
+
+.membership__input-text.no-text-margin {
+    margin-bottom: 0px;
+}
+.membership__form-row label.form {
+    font-size: 14px;
+}
+.section--update {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sidebar__navigation-link:not(.sidebar__navigation-link--current):hover {
+    background-color: #404338;
+}
+  
+/**
+ * Form Validation Error Css
+ */
+.form-group.has-error > input[type='text'] , .error > input[type='text'] {
+    background : rgb(242,222,222);
+}
+.form-group.has-error > input[type='email'], .error > input[type='text'] {
+    background : rgb(242,222,222);
+}
+.form-group.has-error > input[type='number'], .error > input[type='text'] {
+    background : rgb(242,222,222);
+}
+.form-group.has-error > input[type='password'], .error > input[type='text'] {
+    background : rgb(242,222,222);
+}
+.form-group.has-error > textarea {
+    border :1px solid rgb(242,222,222);
+}
+body.auth  .member_login_details {
+    margin-top: 0px;
+    color: #737373;
+    font-size: 13px;
+    font-style: italic;
+}
+
+@media (min-width:800px) {
+    .auth .margin-right-10 {
+        margin-right:10px;
+    }
+}
+
+/* Profile menu header - now hides only below 992px*/
+@media (min-width: 992px) and (max-width: 1180px) {
+  .header__heading {
+    display: block; 
+  } 
+  .header__heading--right {
+      padding-right: 20px;
+  }
+  .profile__menu {
+      margin-right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .header__heading {
+    display: none; 
+  } 
+}
+
+/**hide vertical social links in article in mobile*/
+@media (max-width:767px) {
+    .article.index .news__social.top_social_link {
+        display: none;
+    }
+    .article.index .news__slides {
+        width: 100%;
+    }
+}
+
+/*Ad on Home Page*/
+.homePage .col-full .card__announcement {
+    padding: 0px 0px 20px;
+}
+/*Ad on Article Page*/
+.article .col-full .card__announcement {
+    padding: 0px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.article .news {
+    margin-top: 25px;
+}
+body.page .col-full .card__announcement {
+    padding: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+body.page .contact .col-full .card__announcement {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+body.event .col-full .card__announcement {
+    padding: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+.homePage .section {
+    margin-top: 0px;
+}
+.homePage .section__content::before {
+    margin-top: 30px;
+}
+.homePage .card.card__announcement {
+    margin-bottom: 10px;
+}
+
+/* Added on 18 Jan 2017 */
+.membership__input-text {
+      height: 60px;
+      min-height: 60px;
+      line-height: 60px;
+  }
+.selectCont {
+	margin:0px;
+	position:relative;
+}
+.selectCont select {
+	padding:5px 4px;
+	-webkit-appearance:none;
+	/* Chrome, Safari, Opera */
+	-moz-appearance:none;
+	/* Mozilla Firefox */
+	-o-appearance:appearance;
+	-ms-appearance:appearance;
+	/* IE 9 */
+	appearance:none;
+    border-radius:0px;
+    background-color:#fff;
+    border:1px #e0e0e0 solid;
+    box-shadow:2px 2px 4px #F9F9F9;
+    font-size:16px;
+    height:60px;
+    line-height:60px;
+    margin-bottom:0px;
+    padding:0px 20px;
+    width:100%;
+}
+.selectCont .drop {
+    top:0;
+    right:0;
+    bottom:0;
+    width:50px;
+    height:60px;
+    line-height:34px;
+    position:absolute;
+    pointer-events:none;
+    background-image:url(images/dropdown-arrow.svg);
+    background-repeat:no-repeat;
+    background-position:15px 50%;
+    background-size:18px;
+}
+.selectCont option {
+	padding:5px 8px;
+}
+.selectCont label i {
+	color:#616161;
+	font-size:20px;
+	vertical-align:-14.2857%;
+	-webkit-transform:translate(0px, 2px);
+	/* Chrome, Safari, Opera */
+	-moz-transform:translate(0px, 2px);
+	/* Mozilla Firefox */
+	-o-transform:translate(0px, 2px);
+	-ms-transform:translate(0px, 2px);
+	/* IE 9 */
+	transform:translate(0px, 2px);
+}
+
+.has-margin-top-20 {
+    margin-top:20px;
+}
+.has-margin-bottom-20 {
+    margin-bottom:20px;
+}
+.selectCont select::-ms-expand {
+    display: none;
+}

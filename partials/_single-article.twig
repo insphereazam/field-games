@@ -1,0 +1,58 @@
+{% set networkData = _Network.getNetworkData() %}
+{% if article.articleId > 0 %}
+    {% set imgWidth = 390 %}
+    {% set imgHeight = 270 %}
+    {% if containerClass == 'col-full' %}
+        {% set imgWidth = 1190 %}
+        {% set imgHeight = 490 %}
+    {% endif %}
+    {% set gravity = 'faces' %}
+    {% if containerClass == 'col-quarter' %}
+        {% set gravity = 'face' %}
+        {% set imgWidth = 570 %}
+        {% set imgHeight = 470 %}
+    {% endif %}
+    {% set articleImg = '' %}
+    {% set bgImg = '' %}
+    {% set cardImageClass = 'card__no-image' %}
+    {% if article.featuredMedia | length > 0 and article.featuredMedia['id'] is not empty %}
+        {% set cardImageClass = '' %}
+        {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'thumb', 'gravity': gravity} ) %}
+        {% set bgImg = "background-image: url('"~articleImg~"');" %}
+    {% endif %}
+    {% set blogClass = 'card--blog_'~article.blog['id'] %}
+
+    <div class="{{containerClass}}">
+        <a href="{{article.url}}" class="card card__news">
+            <div class="card__image" style="background-image:url({{network.templatePath}}/static/images/data/article-16.jpg)"></div>
+            <div class="card__category">{{article.label | raw}}</div>
+            <div class="card__content">
+                <h1 class="card__heading">{{article.title | raw}}</h1>
+                <p class="card__text">{{Html.encode(article.excerpt) | raw}}</p>
+                <div class="card__caption">
+                    <div class="card__author">{{article.createdBy['displayName']}}</div>
+                    <div class="card__date">5 Oct 2015</div>
+                </div>
+            </div>
+        </a>
+    </div>
+{% else %}
+<!-- social card render -->
+{% set social = article.social %}  
+<div class="{{containerClass}}">
+    <a href="{{ social.url }}" class="card card__{{social.source}}">
+        {% if social.media | length > 0 and  social.media['path'] is not empty %}
+        <div class="card__image" style="background-image:url({{ social.media['path'] }})"></div>
+        {% endif %}
+        <div class="card__category">{{social.source}}</div>
+        <div class="card__content">
+            <p class="card__text">{{ social.content | raw }}</p>
+            <div class="card__caption">
+                <div class="card__author">{{ (social.source == _SocialFeed.getSocialArticleSourceIsTwitter()) ? '@' : ''}}{{ social.user['name'] | lower }}</div>
+                <div class="card__date">5 Oct 2015</div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endif %}  
+

@@ -1,0 +1,758 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:400px) {
+	.modal-dialog.mini{width:280px;margin:0 auto}
+	.reviewHeader>li .button, .reviewFooter>li .button{height:36px;padding:6px 6px;line-height:24px}
+	.reviewHeader>li .button, .reviewFooter>li .button, .reviewHeader>li .button .fa, .reviewFooter>li .button .fa{font-size:13px}
+	.reviewHeader>li .button .fa, .reviewFooter>li .button .fa{margin-right:4px;padding-right:0}
+	#Channel .select-block, #Moderate .select-block, .allFeed{padding:0}
+	.allFeed{margin-bottom:20px}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-height:767px) and (orientation:portrait) {
+	html, .container-box{height:100%}
+	html, body{background:#ededed}
+	.container-box {background:#24242f}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-height:767px) and (orientation:landscape) {
+	html, .container-box{height:100%}
+}
+
+@media only screen and (min-device-width :270px) and (max-device-width :567px) {
+	.btn-toolbar>.btn, .btn-toolbar>.btn-group, .btn-toolbar>.input-group{margin-left:0}
+	.toolbar-btn{height:auto}
+	.toolbar-navbar #toolbar{padding:5px 4px 5px 8px;height:auto}
+	.toolbar-navbar #toolbar .btn-group{margin-right:0;padding-right:2px}
+	.toolbar-navbar #toolbar .btn-group .btn{font-size:12px;font-weight:600;padding:4px .24rem}
+	.btn-toolbar .toolbar_blockquote:before, .btn-toolbar .toolbar_justifyleft:before, .btn-toolbar .toolbar_justifycenter:before, .btn-toolbar .toolbar_justifyright:before, .btn-toolbar .toolbar_justifyfull:before, .btn-toolbar .toolbar_link:before{font-size:11px}
+	/* Modal */
+	.modal-body .blog-level, .bootbox .bootbox-body {
+		padding:0px;
+	}
+	.modal-body .scroller-codes .code-block{margin:0px}
+	.modal-body .portlet-body{margin-bottom:0px}
+	.modal-body .portlet-body .tabular-data-list{margin-bottom:-1px}
+	.modal-body .tabular-data-list > li, .modal-body .blog-level .blog-level-lists > li, #userprofile-page .daily-ten ul > li, .portlet-body .column{width:100%;border-left:0px none}
+	.modal-body .pagination{margin-top:-10px;margin-bottom:5px}
+	
+}
+
+@media only screen and (min-device-width :568px) and (max-device-width :767px) {
+	.btn-toolbar>.btn, .btn-toolbar>.btn-group, .btn-toolbar>.input-group{margin-left:3px}
+	.toolbar-btn{height:auto}
+	.toolbar-navbar #toolbar{padding:5px 4px;height:auto!important}
+	.toolbar-navbar #toolbar .btn-group{margin-right:5px;padding-right:5px}
+	.toolbar-navbar #toolbar .btn-group .btn{font-size:15px;font-weight:600;padding:4px 8px}
+	.btn-toolbar .toolbar_blockquote:before, .btn-toolbar .toolbar_justifyleft:before, .btn-toolbar .toolbar_justifycenter:before, .btn-toolbar .toolbar_justifyright:before, .btn-toolbar .toolbar_justifyfull:before, .btn-toolbar .toolbar_link:before{font-size:14px}
+	
+	/* Modal */
+	.modal-body .blog-level, .bootbox .bootbox-body{padding:10px}
+}
+
+@media(max-width:767px) {
+	html, body{overflow-x:hidden!important}
+	
+	/* Dashboard Page */
+	.content-page[data-type="background"], .content-page{margin-top:65px}
+	.content-page .breadcrumb{padding:0}
+	.content-page .breadcrumb{margin-bottom:0px}
+	.content-page .breadcrumb ul > li{margin-right:5px}
+	.content-page .breadcrumb ul > li:last-child{margin-right:0}
+	.content-page .breadcrumb ul > li > a, .content-page .breadcrumb ul > li.active{font-size:12px;padding:10px 8px}
+	.content-page .breadcrumb ul > li.active a{padding:0}
+	.content-page .breadcrumb ul > li .fa, .content-page .breadcrumb ul > li > a .fa, .sidebar-controls > li > a > .fa, .article-posts-custom-editor p, .channelInfo p, .elem-block .portlet-body label{font-size:12px}
+	.dashboradPage .breadcrumbArea{margin-top:20px}
+	.sub-header .badge{font-size:10px;padding:5px}
+	.sub-header{font-size:13px;padding:20px 15px}
+	a.btn-add-new{font-size:12px}
+	.notifications a.btn-add-new i, .active-blog a.btn-add-new i{margin-top:-1px}
+	#userprofile-page .polpular-writers ul > li a, #userprofile-page .daily-ten ul > li a, .notifications > ul > li > a{padding:20px 15px;font-size:12px}
+	.notifications > ul > li > a .fa, #userprofile-page .polpular-writers ul > li .description h4, #userprofile-page .daily-ten ul > li .description h4, .profile-status p{font-size:14px}
+	.notifications > ul > li > a > .time{font-size:11px;margin-top:2px}
+	.polpular-writers ul > li.published > a .img-thumbnail, #userprofile-page .polpular-writers ul > li > a .img-thumbnail{left:auto;top:auto}
+	#userprofile-page .polpular-writers ul > li .description.no, .polpular-writers ul > li .description.no, .polpular-writers ul > li .description{padding-right:0px;padding-top:0px}
+	.description .descr-button{padding-bottom:0px!important;margin-top:6px!important}
+	.descr-button > li{float:left;width:33.3333%;text-align:center;margin:0px!important}
+	#userprofile-page .polpular-writers ul > li .description p, #userprofile-page .daily-ten ul > li .description p, .polpular-writers ul > li .description p, .descr-button > li > button, .sidebar-controls > li > a{font-size:11px}
+	
+	/* Edit Post */
+	.edit-post{margin-top:65px!important}
+	.edit-post-fixed-section{padding:15px 0}
+	.edit-post .fixed{top:auto;position:relative}
+	.article-posts{margin:0px;padding:0px}
+	.editPostPage .article-head{padding:20px;margin:0;width:auto}
+	.article-image{width:100%;margin:0px;min-height:inherit}
+	.edit-post-control-block{margin:0 auto 10px;display:inline-block;width:100%;text-align:center}
+	.edit-post-control-block>li{float:none;padding:0 3px;display:inline-block}
+	.header-name{font-size:16px;padding:4px;line-height:1.65rem!important}
+	#content-editor h3{font-size:16px}
+	.thumbnail-elements{width:62%}
+	.thumbnail-elements-inner{width:90%;padding:0 18px}
+	#owl-thumbnails .owl-buttons .owl-prev{left:-28px}
+	#owl-thumbnails .owl-buttons .owl-next{right:-22px}
+	.add-thumbnail{width:36%}
+	.thumbnail-elements-logo{width:120px}
+	.add-thumbnail>a{line-height:80px;min-height:120px}
+	.toolbar-navbar{max-height:inherit;min-height:inherit}
+	.article-posts-custom-editor{padding:15px}
+	.yt-embed{min-height:inherit}
+	#ModalCoverImage .nav-tabs li a, .profile-page .nav-tabs li a,
+	.nav-tabs li a,
+	#signup-page .nav-tabs > li > a,
+	#userprofile-page .daily-ten .tabbable > ul.nav-tabs > li a,
+	.nav-tabs > li a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;padding:10px 5px}
+	#ModalCoverImage .modal-body .blog-level{padding:15px}
+	#ModalCoverImage .modal-body .blog-level [class^="col-"]{margin-bottom:20px}
+	#ModalCoverImage .modal-body .blog-level .row.has-margin-bottom-20{margin-bottom:0}
+	#upload-page-modal, #upload-cover-image, #upload-page-modal, .dropzone{padding:10px}
+	.dropzone .dz-default.dz-message{height:260px;margin-top:-80px}
+	.dropzone .dz-default.dz-message{margin-top:-80px;width:100%;margin-left:0;padding:0 15px}
+	.dropzone{min-height:260px}
+	.dropzone .dz-default.dz-message{background-size:80% auto}
+	.dropzone{height:260px}
+	.dropzone-previews .dz-preview{min-height:150px}
+	.dropzone .dz-preview .dz-details, .dropzone-previews .dz-preview .dz-details{width:70px;height:100px;margin-bottom:10px}
+	.dropzone .dz-preview .dz-details img, .dropzone-previews .dz-preview .dz-details img{width:100%}
+	.dropzone .dz-preview, .dropzone-previews .dz-preview{margin:10px 12px}
+	.dropzone .dz-preview .dz-details .dz-size, .dropzone-previews .dz-preview .dz-details .dz-size{bottom:-24px;height:20px;line-height:1;font-size:12px}
+	.dropzone .dz-remove{font-size:12px;margin-top:10px}
+	#upload-cover-image .dropzone, .followers-count{min-height:inherit}
+	
+    /*Profile*/
+    .profile-page .tab-content{padding:50px 5%;}
+    
+	/* Contact Us */
+	.address > li{font-size:15px;margin-bottom:10px;line-height:18px}
+	.address > li > span{height:25px}.address > li:last-child > span{height:40px}
+	h3.sub-heading{font-size:17px;margin-bottom:10px}
+	
+	/* Search Page */
+	.search.fans-search .blog-post-search{margin-top:-10px}
+	.blog-post-search .input-box, .page.error .input-box{background:transparent none repeat scroll 0 0;margin-bottom:10px;padding:0;height:46px}
+	.blog-post-search .input-box button, .page.error .input-box button{height:46px;top:0px}
+	.blog-post-search .input-box button i, .page.error .input-box button i{position:absolute;top:16px;left:15px}
+	.search.fans-search .search-results{margin-bottom:25px;margin-top:65px;line-height:1}
+	.search.fans-search .search-results h3.sub-heading{margin-top:20px;margin-bottom:35px}
+	
+	/* User Blog Connect Page */
+    .user.dashboard .content-page .breadcrumb,
+    .user.settings .content-page .breadcrumb,
+    .user.customise .content-page .breadcrumb,
+	.user-blogs.connect .content-page .breadcrumb,
+	.user-blogs.create-blog .content-page .breadcrumb,
+	.user.profile .content-page .breadcrumb,
+	.page.index .content-page .breadcrumb,
+	.workflow.index .content-page .breadcrumb{margin-top:65px;margin-bottom:25px}
+	.user-blogs.connect h3.sub-heading,
+	.user-blogs.create-blog h3.sub-heading,
+	.user.profile h3.sub-heading,
+	.page.index h3.sub-heading,
+	.workflow.index h3.sub-heading{margin-bottom:20px}
+	.tabbable > ul.nav-tabs > li a, #myprofile-page .tabbable > ul.nav-tabs > li a, .tabbable > ul.nav-tabs > li a{padding:10px;font-size:14px}
+	.tab-content-inner{padding:30px 0%}
+	.select-block, .select-block.no, .myblog-adjust{padding:0 5%;margin-top:0px}
+	.user-blogs.connect .channelInfo{margin-bottom:30px;margin-top:30px;padding:20px}
+	.channelInfo p{padding-left:0px}
+	.channelInfo .info{left:0px;position:inherit;width:100%;text-align:center;display:inline-block;margin-bottom:10px}
+	.channelInfo .info .fa{margin-top:0px;font-size:24px}
+	.select-block .sbHolder, .select-block .sbSelector, .allFeed .select-block .sbSelector, .chSocialBlocks .select-block .sbSelector, .allFeed .select-block .sbHolder, .chSocialBlocks .select-block .sbHolder{height:48px;line-height:48px}
+	.select-block .sbToggle{top:0px}
+	.user-blogs.connect .chSocialBlocks ul.settings > li{padding-right:0px}
+	.user-blogs.connect .settings li .row .col-md-15.col-sm-14.col-xs-14,
+	.user-blogs.connect .settings li .row .col-md-7.col-sm-10.col-xs-16,
+	.user-blogs.connect .settings li .row .col-md-3.col-sm-6.col-xs-16,
+	.user-blogs.connect .settings li .row .col-md-6.col-sm-16.col-xs-16, .portlet-body > .controls-website .c9n-ippt{width:100%}
+	.user-blogs.connect .settings li .row .col-md-1.col-sm-1.col-xs-1{position:absolute;right:0px;margin-top:10px!important}
+	.user-blogs.connect .settings li .row .col-md-1.col-sm-1.col-xs-1 .button{padding:0px 4px;border-radius:3px}
+	.connect-tabb .settings .social-caption, .chSocialBlocks ul.settings .social-caption,
+	.user-blogs.connect .settings li .row .col-md-3.col-sm-6.col-xs-16{margin-bottom:10px;font-size:14px}
+	.chGreyish{padding:12px 15px}
+	.chGreyish b{margin:-3px -5px;font-size:12px;min-width:90px;padding:6px 10px;letter-spacing:0;text-align:center;border-radius:2px}
+	.chSocialBlocks{width:100%}
+	.greyish b .fa, .chGreyish b .fa{margin-right:4px}
+	.user-blogs.connect .sub-header{padding:15px}
+	.channel .elem-block .sub-header .social-subIcon{top:11px}
+	.greyish > span, .chGreyish > span{font-size:14px}
+	.txt-link{font-size:13px}
+	
+	/* User Blog --> Create Blog Page */
+	.user-blogs.create-blog .breadcrumbArea,
+	.user.profile .breadcrumbArea,
+	.page.index .breadcrumbArea,
+	.workflow.index .breadcrumbArea, .breadcrumbArea{margin-top:5px}
+	.user-blogs.create-blog .gen{width:100%;padding-bottom:20px}
+	.user-blogs.create-blog .autocomplete-selected-item-lists a.tag{font-size:12px;margin-bottom:10px;margin-right:10px}
+	.user-blogs.create-blog .autocomplete-selected-item-lists a.tag b{top:2px}
+	.color-pallete .pallete{width:50px;height:40px;padding:0 5px}
+	.user-blogs.create-blog .elem-block, .user.profile .elem-block{margin-bottom:0}
+	.user-blogs.create-blog .setting-tabb ul.settings > li, .user-blogs.create-blog .embed-tabb ul.settings > li, .user-blogs.create-blog .connect-tabb ul.settings > li{padding:15px}
+	.elem-block .portlet-body label{width:85%;line-height:15px}
+	.user-blogs.create-blog .tab-content-inner{background:#ededed none repeat scroll 0 0;padding:0px;border:0px none}
+	.user-blogs.create-blog .tab-content-inner .form-contact{background:#ffffff none repeat scroll 0 0;padding-bottom:0px 15px;margin-top:0px;padding-top:30px}
+	.user-blogs.create-blog .tab-content-inner .button{margin-top:30px}
+	.user-blogs.create-blog .elem-block .social-buttons, .user.profile .social-buttons{padding:0px;margin-top:20px;margin-bottom:0px}
+	.user-blogs.create-blog .elem-block .social-buttons > ul > li{width:100%;padding:0 20px}
+	.user-blogs.create-blog .elem-block .social-buttons > ul > li:last-child,
+	.user-blogs.create-blog .elem-block .social-buttons > ul > li:nth-last-child(-n+2),
+	.user.profile .social-buttons > ul > li:last-child,
+	.user.profile .social-buttons > ul > li:nth-last-child(-n+2),
+	.social-buttons > ul > li:nth-last-child(-n+2){margin-bottom:20px}
+	
+	/* User Blog --> Profile Page */
+	.user.profile .tab-content{padding:30px 0px 0px}
+	.user.profile .form-profile{padding:0 10px}
+	.user.profile .social-buttons > ul > li{width:100%;padding:0px 10px}
+	.user.profile .social-buttons > ul > li > a{font-size:14px}
+	.user.profile #Settings .button, .user.profile #Customise .button{margin:40px 10px 40px 0}
+	.user.profile .polpular-writers{margin-bottom:0px}
+	.tabular-data-list > li > a {font-size:13px;padding:10px}
+	.elem-block .close, .elem-block .portlet-body .blog-level-lists > li > a .close i, .polpular-writers .portlet-body ul > li a .close {font-size:13px}
+	.elem-block .portlet-body .blog-level .blog-level-lists > li,
+	.polpular-blogs-page .polpular-writers ul > li,
+	.polpular-writers-page .polpular-writers ul > li,
+	.club-blogs-page .polpular-writers ul > li,
+	.signup-myfeed .elem-block .portlet-body .blog-level .blog-level-lists > li,
+	.signup-myfeed .blog-level-lists.suggestedblogs > li,
+	.social-buttons > ul > li{width:100%}
+	.blog-level .blog-level-lists > li .description{padding:5px 0px 0 100px}
+	
+	/* Pages -> FAQ */
+	.page.index .content-wrap, .page.error .content-wrap{padding:20px 15px}
+	
+	/* Pages --> Popular Blog --> Writers */
+	.popular.blogs .search-results,
+	.popular.writers .search-results,
+	.popular.clubs .search-results{margin-bottom:25px;margin-top:25px;line-height:1}
+	.popular.blogs .search-results h3.sub-heading,
+	.popular.writers .search-results h3.sub-heading,
+	.popular.clubs .search-results h3.sub-heading{margin-top:0px;margin-bottom:25px}
+	
+	/* My Blogs --> Workflow Page */
+	.workflow.index .workflows{padding:0 15px}
+	.workflow.index .profile-holder{position:relative}
+	.workflow.index .profile-holder .profile-holder-lt{width:calc(100% - 0px)}
+	.workflow.index .profile-holder .profile-holder-rt{width:20px;padding:0px;position:absolute;right:20px;top:10px}
+	.workflow.index .profile-holder .name{padding-bottom:0px;padding-top:10px;font-size:13px}
+	.workflow.index .profile-holder .thumb-65x65{margin-right:5px}
+	.workflow.index .profile-holder .profile-holder-rt > a, .tabb-adjust .sub-header{font-size:16px}
+	
+	/* User Blog --> Insight Page */
+	.user-blogs.insightsPage .referral-traffic-social{padding:25px 0px}
+	.referral-traffic-social > li > a{padding:10px 15px;font-size:15px}
+	.referral-traffic-social > li span:first-child{width:30px}
+	.user-blogs.insightsPage .panel-default > .panel-heading.default .panel-title,
+	.user-blogs.insightsPage .panel-default > .panel-heading.default .panel-title a{font-size:13px}
+	.user-blogs.insightsPage .panel-default > .panel-heading.default .panel-title a{padding:10px}
+	.user-blogs.insightsPage .panel-default > .panel-heading.default, .panel-default > .panel-heading.default a{max-height:inherit;min-height:inherit}
+	.fu_knob_wrapper .fu_knob_number_sign{font-size:40px}
+	.followers-count h2{font-size:60px}
+	.followers-count span{font-size:16px}
+	.wemoyr{padding:15px;width:100%;display:inline-block;text-align:center}
+	.wemoyr > a{font-size:12px;margin-left:10px;padding:0 10px;display:inline-block}
+	.panel-default > .panel-heading.default .panel-title a .thumbnail{margin-right:0px;max-height:40px;max-width:40px;min-height:40px;min-width:40px;margin-bottom:0px}
+	.panel-default > .panel-heading.default .panel-title a > strong{float:left;margin-top:0px;width:calc(100% - 40px);line-height:15px;padding:0 10px}
+	.panel-default > .panel-heading.default .panel-title a p, .chart-viewcounts > li .views{clear:both;width:100%;font-size:12px}
+	.panel-default > .panel-heading.default .accordion-toggle::after{margin-top:-42px;font-size:24px}
+	.chart-viewcounts > li .number{font-size:24px}.chart-viewcounts > li > a{display:inline-block}
+	
+	/* User Blog --> Blog Page */
+	.post-type{padding:10px 15px}.post-type > a{font-size:12px}
+	.user-blogs.index .polpular-writers ul > li a{padding:15px}
+	.user-blogs.index .description.no .descr-button{margin-top:10px!important}
+	.user-blogs.index .default-blog{margin-bottom:0px}
+	
+	/* User Blog --> Permissions Page */
+	.user-blogs.permissions #Permissions .portlet-body{display:flex}
+	.user-blogs.permissions .blog-level .blog-level-lists > li .description h4,
+	.user-blogs.permissions .polpular-writers ul > li .description h4,
+	.user-blogs.permissions .daily-ten ul > li .description .game-title{margin-top:20px}
+	
+	/* Sign up and Login */
+	#signup-page{margin-top:10px}
+	#signup-page .tab-content{padding:30px 15px}
+	.skip a, .skip a .fa{font-size:15px}.skip a .fa{margin-right:4px}
+	.auth.signup .portlet-body .blog-level .blog-level-lists.followedby > li .description{padding:5px 0 0 120px}
+	.blog-level .blog-level-lists > li .description h4,
+	.polpular-writers ul > li .description h4,
+	.daily-ten ul > li .description .game-title{font-size:15px;line-height:1.2}
+	.form-horizontal.form-profile .controls-full.has-margin-top-50,
+	#signup-page .controls-full.has-margin-top-30,
+	#signup-page .controls-full.has-margin-top-20{margin-top:0px!important;margin-bottom:0px!important}
+	#login-social{margin:0 auto}
+	#signup-page .social-buttons{margin:0 -10px 35px;width:auto}
+	.social-buttons > ul > li:last-child{margin-bottom:0px}
+	#signup-page .WriteAnArticleForm{padding:0 0%}
+	p.text-center.mbt50{margin-bottom:30px}
+	.profile-status h4{font-size:20px}
+	#signup-page .profile-details.no-padding-bottom{margin-bottom:0px;overflow:hidden}
+	.social-buttons > ul > li > a > .fa{font-size:20px}
+	.email-login{font-size:15px;margin-bottom:30px}
+	.email-login .seperation{padding:5px 10px;margin-bottom:0px!important}
+	#signup-progressbar{margin-bottom:30px}
+	.social-buttons > ul > li > a{font-size:15px;padding:20px 15px}
+	#SignUp .WriteAnArticleForm .well-sm > ul > li{margin:0}
+	#SignUp .field-loginform-rememberme.custom-checkbox span{font-size:12px;line-height:15px}
+	#SignUp .field-loginform-rememberme.custom-checkbox span::before{top:2px}
+	
+	/* User Profile Page */
+	.profile.user-profile #userprofile-page{margin-top:75px}
+	#userprofile-page .daily-ten .tabbable > ul.nav-tabs > li{background:#f6f6f6 none repeat scroll 0 0}
+	#recent-articles-slider .owl-pagination{top:-55px}
+	#recent-articles-slider .owl-pagination .owl-page span{margin:3px 4px;width:9px;height:9px}
+	
+	/* Error Page */
+	#error-page, #myblog-page{margin-top:65px}
+	#error-page .breadcrumb, .user-blogs.insightsPage .content-page .breadcrumb,
+	.user-blogs.index .content-page .breadcrumb, .user-blogs.permissions .content-page .breadcrumb,
+	.social-moderation.index .content-page .breadcrumb, .user-blogs.connect .content-page .breadcrumb{margin-bottom:20px}
+	.page.error h3.sub-heading, .user-blogs.insightsPage h3.sub-heading,
+	.user-blogs.index h3.sub-heading, .user-blogs.permissions h3.sub-heading,
+	.social-moderation.index h3.sub-heading, .user-blogs.connect h3.sub-heading{margin-bottom:25px}
+	.error .input-box button, .error nav.transition-med li .search-form button{background:#d9534f none repeat scroll 0 0;color:#fff}
+	.error .input-box button:hover, .error nav.transition-med li .search-form button:hover{background:#c9302c none repeat scroll 0 0}
+	
+	/* Moderation Page */
+	.chSocialBlocks{padding:0 15px}
+	.social-moderation.index #Channel .select-block, .social-moderation.index #Moderate .select-block, .social-moderation.index .allFeed{padding:0 3px}
+	.social-moderation.index .allFeedControls > li{padding:0 5px}
+	
+	/* Connect Page */
+	.user-blogs.connect #Channel .form-horizontal.form-contact > .select-block:first-child{padding:0 15px}
+	.user-blogs.connect #Channel .form-horizontal.form-contact .button.green.lg.pull-right{margin-right:10px}
+	
+	/* Article Page */
+	.article.index .withOutBanner .SocialButtonsBottom{height:51px}
+	.postgridFooter .postgridCallToAction .btn, .h310 > .inner .caption .btn, .h630 > .inner .caption .btn, .h434 > .inner .caption .btn, .article.index .postgrid.fullwidth.more-article li .caption .btn{color:#898989}
+	
+	[class^="sqr"] div, [class^="sqr"] img, [class^="sqr"] iframe, [class^="sqr"] object, [class^="sqr"] video{width:auto!important;max-width:100%!important;margin:0px auto;text-align:center}
+	.postgrid.double .caption{width:calc(100% - 0%)}
+	
+	/* Slider Height */
+	.welcome.t393, .welcome.t393 .slide > .inside, .welcome.t170, .welcome.t170 .slide > .inside, .welcome.t135, .welcome.t135 .slide > .inside{max-height:250px;min-height:250px}
+	.no-stacked-img{margin-bottom:15px}
+	.featuresPage .breadcrumbArea, .myBlogPage .breadcrumbArea{position:relative}
+	.featuresPage .heroLists .double .img-holder, .myBlogPage .heroLists .double .img-holder{max-height:inherit;min-height:inherit}
+	.featuresPage .heroLists .double .img-holder .lt-stacked-img .thumb135, .myBlogPage .heroLists .double .img-holder .lt-stacked-img .thumb135{max-height:200px;min-height:200px}
+	
+    /*Insights*/
+    .insight-follower-sliders{padding:25px 5%}
+    #insight-follower-slider .insight-follower-item{width:50%}
+	
+	
+	
+	
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	html, body{overflow-x:hidden!important}
+	.container{width:98%}
+	.weather-dropdown .select-wrapper::after, .changeLocation .select-wrapper::after{display:none}
+	.changeLocation .button-weather{display:block;width:100%;padding:8px 30px}
+	.select-wrapper select{padding:0px 10px}
+	.select-wrapper select > option{font-size:13px}
+	
+	/* Logo */
+	.header .logo{width:175px}
+	.hdr-highlights > ol > li > a{font-size:11px}
+	
+	/* Thumbs */
+	.article-image{position:relative}
+	#hero, #hero > .cnFeatures-lists,
+	#hero > .cnFeatures-lists > .cnFeatures,
+	.cnFeatures.social .thumb302,
+	.cnFeatures .posts-grid,
+	.cnFeatures .article-image,
+	.cnFeatures .posts-grid .placeholder,
+	.cnFeatures.social .lt-stacked-img,
+	.cnFeatures .thumb302,
+	#hero .article-image{max-height:330px;min-height:330px}
+	.cnFeatures .posts-grid .article-image .overlay,
+	.cnFeatures.withoutImage .posts-grid .article-image .overlay{bottom:auto;top:280px}
+	.cnFeatures.social.hFull .postgridFooter,
+	#hero .cnFeatures.social .posts-excerpt .copy{margin-bottom:10px}
+	.socialCaption .postgridCallToAction{right:15px;top:20px}
+	.cnFeatures.social.hFull .posts-excerpt .dzBody .img-thumbnail{width:100%;height:100px;margin-bottom:15px;position:relative}
+	.cnFeatures.social.hFull .posts-excerpt .dzBody .dz-details{padding-left:0px}
+	#hero .posts-excerpt .copy, #hero .posts-excerpt .copy{font-size:13px;line-height:1.25}
+	
+	/* Hero Home Page */
+	#hero .caption .mobileShareBtn{position:absolute;right:-10px;margin-top:2px}
+	.cnFeatures .posts-excerpt{width:calc(100% - 50px);right:25px}
+	.cnFeatures .posts-excerpt, #hero .cnFeatures.social.hFull .posts-excerpt{padding:0 0px 20px}
+	#hero .posts-excerpt .game-title{font-size:17px}
+	#hero .posts-excerpt .caption p{font-size:11px}
+	#hero .posts-grid .article-image .overlay{left:auto;top:32px;margin-top:0px;right:20px}
+	#hero .welcome .slide > .inside .btnRead, #hero .welcome .slide > .inside .btnPlay{width:60px;height:60px;padding:8px}
+	.homePage.home.index #hero .cnFeatures-lists .posts-grid .lt-stacked-img,
+	.homePage.home.index #hero .cnFeatures-lists .posts-grid .lt-stacked-img>.flexslider.welcome.t393,
+	.homePage.home.index #hero .cnFeatures-lists .posts-grid .lt-stacked-img>.flexslider.welcome.t393 .slide>.inside{height:330px;min-height:330px}
+	
+	/* Home Page --> Navigation */
+	.navigational-area .row{margin-left:0px;margin-right:0px}
+	.navigational-area [class^="col-"]{padding-left:0;padding-right:0}
+	.navigational-area .col-md-12.col-sm-12.col-xs-16{width:82%}
+	.navigational-area .col-md-4.col-sm-4.col-xs-16{width:18%}
+	.main-nav > ul > li > a{font-size:12px;padding:17px 6px 15px 7px;text-transform:uppercase}
+	
+	
+	/* Grid Home Page */
+	.tabletGrid{width:100%;margin-top:30px}.has-margin-bottom-30.tabletGrid{margin-top:0px}
+	.tabletGrid50{width:50%;float:left}
+	.tabletGrid50:first-child{margin-right:10px;width:calc(50% - 10px)}
+	.tabletGrid50:last-child{margin-left:10px;width:calc(50% - 10px)}
+	.homePage .tabletGrid .h310{margin-bottom:10px!important}
+	
+	.visibleTabletWithOddNumber{display:block}
+	
+	/* Weather */
+	.weather-widget{min-height:381px}
+	.weather-header{padding:53px 40px}
+	.weather-footer{padding:50px 20px}
+	p.copyright{font-size:11px}
+	
+	/* My Blogs */
+	.blogProfilePicHolder{height:180px}
+	.blogProfilePicHolder .thumb135,
+	.fullwidth .img-holder .lt-stacked-img .thumb135{max-height:180px;min-height:180px}
+	.featuresPage #hero .double .postgridHolder .left-profile,
+	.myBlogPage #hero .double .postgridHolder .left-profile{margin-top:0;margin-bottom:0}
+	.featuresPage #hero .h434 > .inner.withThumb .cnLNTitle,
+	.myBlogPage #hero .h434 > .inner.withThumb .cnLNTitle{margin-top:0}
+	.myBlogPage #hero .h434 > .inner.twtr .left-profile,
+	.featuresPage #hero .h434 > .inner.twtr .left-profile,
+	.myBlogPage #hero .h434 > .inner.fbk .left-profile,
+	.featuresPage #hero .h434 > .inner.fbk .left-profile{margin-top:25px}
+	.h434 > .inner.twtr .postgridCallToAction,
+	.h434 > .inner.fbk .postgridCallToAction{top:-25px}
+	.h434 > .inner.social.withThumb.fbk .img-holder, .h434 > .inner.social.withoutThumb.fbk .img-holder{margin-top:10px}
+	.h434 > .inner .cnLNTitle, .inner .cnLNTitle{margin-top:0}
+	.myBlogPage.home.index .h434 > .inner .postgrid .postgridHolder,
+	.featuresPage.home.index .h434 > .inner .postgrid .postgridHolder,
+	.myBlogPage.home.index #hero .h434 > .inner .postgrid .postgridHolder{height:367px}
+	.featuresPage.home.index #hero .h434 > .inner.social .postgrid .postgridHolder,
+	.myBlogPage.home.index #hero .h434 > .inner.social .postgrid .postgridHolder{height:392px}
+	#hero .h434 .dz-content{display:inline-block}
+	.welcome .slide > .inside .container, .ytVideo .overlayVideoHolder{padding:0 0px}
+	.double .dz-details .copy,
+	.no-profile .dz-details .copy,
+	.fullwidth .dz-details .copy,
+	/*.postgridBody .copy{font-size:12.5px;margin-bottom:10px;line-height:14px}*/
+	.postgrid.double .caption{bottom:0}
+	.sqr-ads, .sqr-ads-white{padding:30px 28px 30px 27px;text-align:center}
+	.fullwidth .mobileShareBtn, .search.fans-search .mobileShareBtn{position:absolute;right:0;width:auto;padding:0px}
+	.fullwidth .mobileShareBtn .btnShare{padding:0}
+	.fullwidth .shareTooltips{min-width:132px;right:30px;top:-1px}
+	.tabletGrid .sqr-ads-white img{max-width:300px;margin:0px auto;text-align:center}
+	.welcome.t393 .slide > .inside .container{position:relative}
+	.welcome.t393 .slide > .inside .container,
+	.welcome.t393 .slide > .inside .container .overlay,
+	.welcome.t393 .slide > .inside .btnRead,
+	.welcome.t393 .slide > .inside .btnPlay,
+	.welcome.t170 .slide > .inside .container,
+	.welcome.t170 .slide > .inside .container .overlay,
+	.welcome.t170 .slide > .inside .btnRead,
+	.welcome.t170 .slide > .inside .btnPlay{height:auto}
+	.latestNewsList li a .overlay,
+	.cnFeatures .overlay,
+	.postgrid.double a .overlay{left:auto;right:20px;margin-top:0px;bottom:0;position:absolute;opacity:1}
+	
+	/* Article Page */
+	.article.index .content-wrap{background-image:none}
+	.article.index .withOutBanner .SocialButtonsBottom{height:70px}
+	
+	/* Theme Page */
+	.myBlogPage.home.index #hero .postgrid.double a .overlay, .myBlogPage.home.index .postgrid.double a .overlay{left:auto;right:20px;margin-top:0px;bottom:0;position:absolute;opacity:1}
+	.myBlogPage.home.index .RowOneColOne .double .dz-details .copy,
+	.myBlogPage.home.index .RowTwoColOne .double .dz-details .copy,
+	.myBlogPage.home.index .no-profile .dz-details .copy,
+	.myBlogPage.home.index .fullwidth .dz-details .copy,
+	.myBlogPage.home.index .postgridBody .copy{font-size:14px;line-height:18px;margin-bottom:10px}
+	.myBlogPage.home.index .sqr-ads, .myBlogPage.home.index .sqr-ads-white{padding:31px 28px 31px 27px;border-bottom:1px solid #e0e0e0;margin-bottom:0px}
+	[class^="sqr"] img, [class^="sqr"] iframe, [class^="sqr"] object, [class^="sqr"] video{margin:0px auto;text-align:center}
+	
+	/* My Profile */
+	.profile-page .tab-content{padding:50px 5%;}
+	.blog-level .blog-level-lists > li .description{padding:8px 0 0 100px}
+	.blog-level .blog-level-lists > li .description h4,
+	.polpular-writers ul > li .description h4,
+	.daily-ten ul > li .description .game-title{font-size:16px;margin-top:10px}
+	.portlet-body > .controls-website{padding:0 30px}
+	.controls-website a.button-info{right:25px}
+	
+	/* Article Page */
+	.article-image, .withImage #article-banner{max-height:350px}
+	#article-banner #carousel{width:100%}
+	#article-banner #carousel li{width:130px!important;margin:0 6px 0 0}
+	.postgridFooter .postgridCallToAction .btn, .h310 > .inner .caption .btn, .h630 > .inner .caption .btn, .h434 > .inner .caption .btn{color:#898989}
+	
+	/* Social Sharing */
+	.SocialButtonsBottom, .SocialButtonsHorizontal, .SocialButtonsHorizontal > ul.SocialButtons, .SocialButtonsVertical > ul.SocialButtons > li, .SocialButtonsHorizontal > ul.SocialButtons > li{height:70px}
+	.SocialButtonsVertical > ul.SocialButtons > li.facebook a, .SocialButtonsVertical > ul.SocialButtons > li.twitter a, .SocialButtonsVertical > ul.SocialButtons > li.g-plus a, .SocialButtonsVertical > ul.SocialButtons > li.like a, .SocialButtonsVertical > ul.SocialButtons > li.comment a, .SocialButtonsVertical > ul.SocialButtons > li.read a, .SocialButtonsHorizontal > ul.SocialButtons > li.facebook a, .SocialButtonsHorizontal > ul.SocialButtons > li.twitter a, .SocialButtonsHorizontal > ul.SocialButtons > li.g-plus a, .SocialButtonsHorizontal > ul.SocialButtons > li.like a, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a, .SocialButtonsHorizontal > ul.SocialButtons > li.read a{line-height:25px;padding:10px 0px;text-align:center}
+	.SocialButtonsVertical > ul.SocialButtons > li.facebook a .fa, .SocialButtonsVertical > ul.SocialButtons > li.twitter a .fa, .SocialButtonsVertical > ul.SocialButtons > li.g-plus a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.facebook a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.twitter a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.g-plus a .fa{margin-right:0px;font-size:18px;width:100%}
+	.SocialButtonsVertical > ul.SocialButtons > li a span, .SocialButtonsVertical > ul.SocialButtons > li.like a span, .SocialButtonsVertical > ul.SocialButtons > li.comment a span, .SocialButtonsVertical > ul.SocialButtons > li.read a span, .SocialButtonsHorizontal > ul.SocialButtons > li a span, .SocialButtonsHorizontal > ul.SocialButtons > li.read a span, .SocialButtonsHorizontal > ul.SocialButtons > li.like a span, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a span, .SocialButtonsHorizontal > ul.SocialButtons > li.read a span{margin-right:0px;font-size:15px;width:100%;font-size:11px}
+	.SocialButtonsVertical > ul.SocialButtons > li.like a .fa, .SocialButtonsVertical > ul.SocialButtons > li.comment a .fa, .SocialButtonsVertical > ul.SocialButtons > li.read a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.like a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.read a .fa{margin-right:0px;font-size:18px;width:100%}
+	.SocialButtonsHorizontal > ul.SocialButtons > li.like a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.read a .fa{margin-bottom:8px}
+	.article-posts-excerpt{padding:35px 30px 30px 30px}
+	.article-posts-excerpt h4.borderedTitle{margin:-36px -30px 25px -30px;padding:35px 30px 30px 30px}
+	#article-sidebar .latestNewsList .description{padding-top:0;height:85px;float:left}
+	
+	/* Connect Page */
+	.tab-content-inner{padding:30px 7.5% 30px}
+	.select-block, .select-block.no, .myblog-adjust{padding:0}
+	.chSocialBlocks ul.settings > li{padding:15px 0px 15px 0}
+	.user-blogs.connect .settings li .row .col-md-1.col-sm-1.col-xs-1{margin-top:6px!important;position:absolute;right:0}
+	#twitter-tags-list .col-md-7.col-sm-10.col-xs-16,
+	#twitter-tags-list .col-md-3.col-sm-6.col-xs-16{font-size:14px}
+	#twitter-tags-list .col-md-3.col-sm-6.col-xs-16,
+	#twitter-tags-list .col-md-6.col-sm-16.col-xs-16{margin-top:12px}
+	#twitter-tags-list .col-md-15.col-sm-14.col-xs-14{width:100%}
+	.user-blogs.connect .controls-website.no-level a.button-info{right:0px}
+	.user-blogs.connect .settings .select-block label{width:auto!important}
+	
+	/* Search Page */
+	.search.fans-search .double .cnLNTitle,
+	.search.fans-search .double li a .cnLNTitle,
+	.search.fans-search .fullwidth .cnLNTitle,
+	.search.fans-search .fullwidth li a .cnLNTitle,
+	.search.fans-search .postgridBody .cnLNTitle,
+	.search.fans-search .postgridBody li a .cnLNTitle{font-size:18px;line-height:22px;margin-bottom:20px;}
+	.search.fans-search .double .dz-details .copy,
+	.search.fans-search .no-profile .dz-details .copy,
+	.search.fans-search .fullwidth .dz-details .copy, .search.fans-search .postgridBody .copy{font-size:14px;line-height:19px}
+	.search.fans-search #blog-search-page aside .polpular-writers ul > li .description,
+	.search.fans-search #blog-search-page aside .polpular-writers ul > li .description{float:left;padding:0px 0px 0 90px}
+	.search.fans-search #blog-search-page aside .blog-level .blog-level-lists > li .description h4,
+	.search.fans-search #blog-search-page aside .polpular-writers ul > li .description h4,
+	.search.fans-search #blog-search-page aside .daily-ten ul > li .description .game-title{ margin-top:0px}
+	
+	/* User Blog Connect Page */
+	.user-blogs.create-blog .controls-website a.button-info{right:0px}
+	.user-blogs.create-blog .setting-tabb ul.settings > li,
+	.user-blogs.create-blog .embed-tabb ul.settings > li,
+	.user-blogs.create-blog .connect-tabb ul.settings > li{padding:20px}
+	.user-blogs.create-blog .myblog-adjust .article-thumb .fileupload-button-controls .btn-file{padding:80px 0}
+	
+	/* User Page --> Dashboard Page */
+	.inner-descr .button, .inner-descr .button.block > i{font-size:15px}
+	.description .descr-button, .description.no .descr-button{padding-bottom:0px!important;margin-top:35px!important}
+	.descr-button > li{float:left;width:33.3333%;text-align:center;margin:0px!important}
+	.descr-button > li button{font-size:0px;text-align:center}
+	#userprofile-page .polpular-writers ul > li .description p,
+	#userprofile-page .daily-ten ul > li .description p,
+	.polpular-writers ul > li .description p{font-size:13px}
+	#userprofile-page .polpular-writers ul > li .description{float:left;padding-top:0px}
+	#userprofile-page .polpular-writers ul > li .description h4, #userprofile-page .daily-ten ul > li .description h4{font-size:16px}
+	
+	/* Edit Post */
+	.toolbar-navbar{max-height:inherit;min-height:inherit}
+	.toolbar-navbar #toolbar{padding:9px 10px 5px;height:auto!important}
+	.toolbar-navbar #toolbar .btn-group{margin-right:5px;padding-right:5px}
+	.toolbar-navbar #toolbar .btn-group .btn{font-size:14px;font-weight:600;padding:5px 7px}
+	.btn-toolbar .toolbar_blockquote:before, .btn-toolbar .toolbar_justifyleft:before, .btn-toolbar .toolbar_justifycenter:before, .btn-toolbar .toolbar_justifyright:before, .btn-toolbar .toolbar_justifyfull:before, .btn-toolbar .toolbar_link:before{font-size:14px}
+	.fixed{position:fixed;top:0;left:0;width:100%;z-index:9999;padding:15px 0;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-o-transition:all .2s ease;-ms-transition:all .2s ease;transition:all .2s ease;border-bottom:1px solid rgba(0,0,0,0.12);box-shadow:0 2px 1px rgba(221,221,221,0.33);background:none repeat scroll 0 0 rgba(237,237,237,0.95)}
+	.thumbnail-elements{width:75%}
+	.thumbnail-elements .row{margin:0px}
+	.thumbnail-elements-inner{width:79%}
+	.thumbnail-elements-inner .owl-item{width:160px!important}
+	.add-thumbnail{width:23%}
+	.autocomplete-selected-item-lists a.tag{font-size:13px;letter-spacing:0em;margin-right:5px;margin-bottom:5px;float:left}
+	.autocomplete-selected-item-lists a.tag b{top:7px}
+	#sidebar .autocomplete-selected-item-lists a.tag b{top:1px}
+	[class^="sidebar-"] .col-md-7.col-sm-7.col-xs-16{padding-right:0px}
+	[class^="sidebar-"] .col-md-9.col-sm-9.col-xs-16{padding-left:0px}
+	[class^="sidebar-"] .post-to h3, [class^="sidebar-"] .post-to a{font-size:16px}
+	[class^="sidebar-"] .post-to a{padding:4px}
+	
+	/* Modals */
+	#ModalNewArticle .modal-dialog, #ajax-modal .modal-dialog, #ModalNewCode .modal-dialog, #ModalNewClub .modal-dialog, #ModalNewBlog .modal-dialog, #ModalCoverImage .modal-dialog, #ModalSocial .modal-dialog, #ModalVideo .modal-dialog, #ModalImage .modal-dialog{width:85%}
+	.modal-body .nav-tabs > li > a{font-size:14px;padding:10px 10px}
+	
+	/* Moderate Page */
+	#Channel .select-block{padding:0%}
+	#Moderate .tab-content-inner{padding:30px 20px}
+	#Moderate .tab-content-inner form > .select-block{margin-bottom:0px}
+	#Moderate .select-block{padding:0;margin-bottom:25px}
+	#clubBlogs > li > a button.follow{width:50%;right:25%}
+	.social-connect.index #signup-page .tab-content, #signup-page .tab-content{padding:50px 8%}
+	#signup-page .WriteAnArticleForm{padding:0 10px}
+	
+	/* Workflow */
+	.workflows{padding:0}
+	
+	
+	.article.index .postgrid.fullwidth.more-article li .postgridHolder .img-holder .dz-details .caption{position:absolute;bottom:0px;width:100%}
+	/* Article More Posts */
+	/*.h310 > .inner .cnLNTitle, .h630 > .inner .cnLNTitle, .more-article li .cnLNTitle{font-size:16px;line-height:1.5;margin-bottom: 10px}*/
+	.h310 > .inner, .h630 > .inner, .h434 > .inner{padding:20px}
+	.article.index .postgrid.fullwidth.more-article .h630, .article.index .postgrid.fullwidth.more-article .h630 > .inner,
+	.article.index .postgrid.fullwidth.more-article li, .article.index .postgrid.fullwidth.more-article li > .inner{height:393px}
+	.article.index .postgrid.fullwidth.more-article .h630 > .inner .postgrid .postgridHolder,
+	.article.index .postgrid.fullwidth.more-article li > .inner .postgrid .postgridHolder{height:371px}
+	.article.index .postgrid.fullwidth.more-article .h630 > .inner .postgrid .postgridHolder .img-holder,
+	.article.index .postgrid.fullwidth.more-article li > .inner .postgrid .postgridHolder .img-holder,
+	.article.index .postgrid.fullwidth.more-article .h630 > .inner .postgrid .postgridHolder .img-holder .dz-details,
+	.article.index .postgrid.fullwidth.more-article li > .inner .postgrid .postgridHolder .img-holder .dz-details{height:270px}
+	.article.index .postgrid.fullwidth.more-article li .postgridHolder .img-holder .dz-details{height:157px;overflow:inherit}
+	
+	/* End */
+	.double .dz-details .copy, .no-profile .dz-details .copy{width:100%}
+	
+	/* Table Grid */
+	.tabletGrid .latestNews .latestNewsList li{float:left;width:50%}
+	.tabletGrid .latestNews .latestNewsList li:nth-child(even){border-left:1px solid #e1e1e1}
+	.tabletGrid .tabletGrid50 .latestNews .latestNewsList li{float:left;width:100%}
+	.tabletGrid .tabletGrid50 .latestNews .latestNewsList li:nth-child(even){border-left:0px none}
+	/*.themePage.home.index .RowOneColOne .postgrid.double li{border-bottom:1px solid #e1e1e1}*/
+	
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+	.main-nav > ul > li > a{font-size:12px;padding:17px 13px 15px 13px;text-transform:uppercase}
+	.myBlogPage .blogProfileHolder .postgridFooter [class^="col-"] .button{letter-spacing:0px;font-size:11px}
+	
+	/* Article Page */
+	.article-image, .withImage #article-banner{max-height:460px}
+	#article-banner #carousel{width:100%}
+	#article-banner #carousel li{width:130px!important;margin:0 6px 0 0}
+	.content-wrap, .article.index .content-wrap{background-position:right top;background-size:1130px auto}
+	.postgridFooter .postgridCallToAction .btn, .h310 > .inner .caption .btn, .h630 > .inner .caption .btn, .h434 > .inner .caption .btn{color:#898989}
+	.article.index .postgrid.fullwidth.more-article .dz-details .caption p,
+	.article.index .postgrid.fullwidth.more-article .h310 > .inner .caption p,
+	.article.index .postgrid.fullwidth.more-article .h630 > .inner .caption p,
+	.article.index .postgrid.fullwidth.more-article .h434 > .inner .caption p{font-size:9px}
+	.article.index .postgrid.fullwidth.more-article li .postgridHolder .img-holder .dz-details .caption{position:absolute;bottom:-10px;width:100%}
+	.double .dz-details .copy, .no-profile .dz-details .copy{width:100%}
+	
+	/* Social Sharing */
+	.article.index .withOutBanner .SocialButtonsBottom{height:92px}
+	.SocialButtonsBottom, .SocialButtonsHorizontal, .SocialButtonsHorizontal > ul.SocialButtons, .SocialButtonsVertical > ul.SocialButtons > li, .SocialButtonsHorizontal > ul.SocialButtons > li{height:92px}
+	.SocialButtonsVertical > ul.SocialButtons > li.facebook a, .SocialButtonsVertical > ul.SocialButtons > li.twitter a, .SocialButtonsVertical > ul.SocialButtons > li.g-plus a, .SocialButtonsVertical > ul.SocialButtons > li.like a, .SocialButtonsVertical > ul.SocialButtons > li.comment a, .SocialButtonsVertical > ul.SocialButtons > li.read a{line-height:36px;padding:25px 0px;text-align:center;font-size:16px}
+	.SocialButtonsHorizontal > ul.SocialButtons > li.facebook a, .SocialButtonsHorizontal > ul.SocialButtons > li.twitter a, .SocialButtonsHorizontal > ul.SocialButtons > li.g-plus a{line-height:21px;padding:25px 0px;text-align:center;font-size:16px}
+	.SocialButtonsHorizontal > ul.SocialButtons > li.like a, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a, .SocialButtonsHorizontal > ul.SocialButtons > li.read a{line-height:33px;padding:25px 0px;text-align:center;font-size:16px}
+	.SocialButtonsVertical > ul.SocialButtons > li.facebook a .fa, .SocialButtonsVertical > ul.SocialButtons > li.twitter a .fa, .SocialButtonsVertical > ul.SocialButtons > li.g-plus a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.facebook a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.twitter a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.g-plus a .fa{margin-right:0px;font-size:20px;width:100%}
+	.SocialButtonsVertical > ul.SocialButtons > li a span, .SocialButtonsVertical > ul.SocialButtons > li.like a span, .SocialButtonsVertical > ul.SocialButtons > li.comment a span, .SocialButtonsVertical > ul.SocialButtons > li.read a span, .SocialButtonsHorizontal > ul.SocialButtons > li a span, .SocialButtonsHorizontal > ul.SocialButtons > li.read a span, .SocialButtonsHorizontal > ul.SocialButtons > li.like a span, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a span, .SocialButtonsHorizontal > ul.SocialButtons > li.read a span{margin-right:0px;width:100%;font-size:11px}
+	.SocialButtonsVertical > ul.SocialButtons > li.like a .fa, .SocialButtonsVertical > ul.SocialButtons > li.comment a .fa, .SocialButtonsVertical > ul.SocialButtons > li.read a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.like a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.read a .fa{margin-right:0px;font-size:18px;width:100%}
+	.SocialButtonsHorizontal > ul.SocialButtons > li.like a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.comment a .fa, .SocialButtonsHorizontal > ul.SocialButtons > li.read a .fa{margin-bottom:0px}
+	
+	/* Connect Page */
+	.tab-content-inner{padding:30px 7.5% 30px}
+	.select-block, .select-block.no, .myblog-adjust{padding:0 5%}
+	
+	/* User Page --> Dashboard Page */
+	.inner-descr .button, .inner-descr .button.block > i{font-size:15px}
+	.description .descr-button, .description.no .descr-button{padding-bottom:0px!important;margin-top:15px!important}
+	.descr-button > li{float:left;width:33.3333%;text-align:center;margin:0px!important}
+	.descr-button > li button{text-align:center}
+	#userprofile-page .polpular-writers ul > li .description p,
+	#userprofile-page .daily-ten ul > li .description p,
+	.polpular-writers ul > li .description p{font-size:13px}
+	#userprofile-page .polpular-writers ul > li .description{float:left;padding-top:0px}
+	#userprofile-page .polpular-writers ul > li .description h4, #userprofile-page .daily-ten ul > li .description h4{font-size:16px}
+	
+	/* Edit Post */
+	.toolbar-navbar #toolbar{padding-top:12px}
+	.toolbar-navbar #toolbar .btn-group{margin-right:5px;padding-right:5px}
+	.toolbar-navbar #toolbar .btn-group .btn{font-size:18px;font-weight:600;padding:5px 7px}
+	.btn-toolbar .toolbar_blockquote:before, .btn-toolbar .toolbar_justifyleft:before, .btn-toolbar .toolbar_justifycenter:before, .btn-toolbar .toolbar_justifyright:before, .btn-toolbar .toolbar_justifyfull:before, .btn-toolbar .toolbar_link:before{font-size:18px}
+	.thumbnail-elements{width:80%}
+	.thumbnail-elements .row{margin:0px}
+	.thumbnail-elements-inner{width:90%}
+	.thumbnail-elements-logo{width:100px}
+	.add-thumbnail{width:18%}
+	.post-thumbnail-controls{height:120px;overflow:hidden}
+	.thumbnail-elements, .add-thumbnail{float:left;height:100px}
+	.add-thumbnail > a{line-height:60px;min-height:100px;padding:25px 0 15px}
+	
+	/* FB Thumbnails */
+	.cnFeatures.social.hFull .posts-excerpt .dzBody .img-thumbnail{width:100%;height:100px;margin-bottom:15px;position:relative}
+	.cnFeatures.social.hFull .posts-excerpt .dzBody .dz-details{padding-left:0px}
+	#hero .posts-excerpt .caption p{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:120px}
+}
+
+@media(min-width:1200px) {
+	.article.index .postgrid.fullwidth.more-article li .postgridHolder .img-holder .dz-details .caption{position:absolute;bottom:-10px;width:100%}
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+	#hero .cnFeatures.social.ytb .postgridFooter{margin-top:-20px}
+	.themePage.home.index .postgrid.double .postgridHolder.twtr .postgridHeader,
+	.themePage.home.index .postgrid.double .postgridHolder.fbk .postgridHeader{max-height:inherit}
+	.themePage.home.index .postgrid.double .postgridHolder.twtr .dz-details .dz-content,
+	.themePage.home.index .postgrid.double .postgridHolder.fbk .dz-details .dz-content{margin-top:10px}
+	.double .postgridHolder .caption .left-profile{margin-top:0px;margin-bottom:0px}
+	.double .postgridHolder .left-profile{margin-bottom:0px}
+}
+
+@media(min-width:768px) and (max-width:991px) {
+	.RowTwoColOne .postgrid.double .welcome.t393, .RowTwoColOne .postgrid.double .welcome.t393 .slide > .inside{height:260px}
+	.h630 > .inner.social .img-holder .dz-details p,
+	.h434 > .inner.social .img-holder .dz-details p,
+	.h310 > .inner.social .img-holder .dz-details p{width:100%;font-size:15.5px;position:relative;display:table-cell;vertical-align:middle}
+	.homePage .RowThreeColTwo .h630{height:632px}
+	.homePage .RowThreeColTwo .h630 > .inner{height:632px}
+	.homePage .RowThreeColTwo .h630 > .inner .postgrid,
+	.homePage .RowThreeColTwo .h630 > .inner .postgrid .postgridHolder{height:592px}
+	.homePage .RowThreeColTwo .welcome.t170, .homePage .RowThreeColTwo .welcome.t170 .slide > .inside{height:270px;overflow:hidden}
+	.double .postgridHolder .caption .left-profile{margin-top:0px;margin-bottom:0px}
+	.double .postgridHolder .left-profile{margin-bottom:0px}
+	.themePage.home.index .postgrid.double .postgridHolder.twtr .postgridHeader,
+	.themePage.home.index .postgrid.double .postgridHolder.fbk .postgridHeader{max-height:inherit}
+	.themePage.home.index .postgrid.double .postgridHolder.twtr .dz-details .dz-content,
+	.themePage.home.index .postgrid.double .postgridHolder.fbk .dz-details .dz-content{margin-top:10px}
+	.themePage.home.index .tabletGrid50 .h434 > .inner.twtr .left-profile,
+	.themePage.home.index .tabletGrid50 .h434 > .inner.fbk .left-profile,
+	.themePage.home.index .h630 > .inner.twtr .left-profile,
+	.themePage.home.index .h630 > .inner.fbk .left-profile{margin-top:25px}
+	.themePage.home.index .tabletGrid50 .h434 > .inner.twtr .postgridCallToAction,
+	.themePage.home.index .tabletGrid50 .h434 > .inner.fbk .postgridCallToAction,
+	.themePage.home.index .h630 > .inner.twtr .postgridCallToAction,
+	.themePage.home.index .h630 > .inner.fbk .postgridCallToAction{top:-25px}
+	.h310 > .inner.dairy .img-holder .lt-stacked-img, .h310 > .inner.sports .img-holder .lt-stacked-img, .h310 > .inner.tourism .img-holder .lt-stacked-img, .h310 > .inner.viticulture .img-holder .lt-stacked-img, .h310 > .inner.viti .img-holder .lt-stacked-img, .h310 > .inner.dairy .img-holder .lt-stacked-img, .h310 > .inner.equine .img-holder .lt-stacked-img, .h310 > .inner.water .img-holder .lt-stacked-img, .h310 > .inner.cropping .img-holder .lt-stacked-img, .h310 > .inner.livestock .img-holder .lt-stacked-img, .h310 > .inner.weather .img-holder .lt-stacked-img, .h310 > .inner.state .img-holder .lt-stacked-img, .h310 > .inner.horticulture .img-holder .lt-stacked-img, .h310 > .inner.gonebush .img-holder .lt-stacked-img, .h310 > .inner.social.withThumb .img-holder .lt-stacked-img{top:0px}
+	.dz-details-header .game-code{margin-top:0}
+	.dz-details-header{margin-bottom:5px}
+	.themePage.home.index .themePage .RowThreeColOne .h630 > .inner.social.igrm .img-holder .thumb135{max-height:510px;min-height:510px}
+	.myBlogPage .heroLists{padding-top:80px}
+	.featuresPage #hero .heroLists .postgrid.double,
+	.myBlogPage #hero .heroLists .postgrid.double,
+	.featuresPage #hero .h434,
+	.myBlogPage #hero .h434,
+	.featuresPage #hero .h434 .inner,
+	.myBlogPage #hero .h434 .inner,
+	.myBlogPage #hero .heroLists .ltCol,
+	.myBlogPage #hero .heroLists .rtCol,
+	.myBlogPage #hero .heroLists .ltCol .postgrid,
+	.myBlogPage #hero .heroLists .ltCol .postgrid li{max-height:430px;min-height:430px}
+	.featuresPage #hero .heroLists .postgrid.double li .postgridHolder,
+	.myBlogPage #hero .heroLists .postgrid.double li .postgridHolder{max-height:390px;min-height:390px}
+	.featuresPage #hero .heroLists .postgrid.double li .postgridHolder .img-holder,
+	.myBlogPage #hero .heroLists .postgrid.double li .postgridHolder .img-holder{max-height:390px;min-height:390px}
+	.myBlogPage .heroLists .double .img-holder, .myBlogPage .heroLists .double .img-holder .lt-stacked-img .thumb135{max-height:390px;min-height:390px}
+	.featuresPage #hero .h434 .inner .postgrid, .myBlogPage #hero .h434 .inner .postgrid{max-height:390px;min-height:390px}
+	.featuresPage .h434 > .inner.fbk .postgridCallToAction,
+	.myBlogPage .h434 > .inner.fbk .postgridCallToAction{top:0px}
+	.myBlogPage #hero .heroLists .rtCol .postgridHeader,
+	.featuresPage #hero .heroLists .rtCol .postgridHeader{max-height:inherit;margin-bottom:0px}
+	.myBlogPage #hero .heroLists .rtCol .postgridHeader .left-profile,
+	.featuresPage #hero .heroLists .rtCol .postgridHeader .left-profile{margin-top:25px!important;margin-bottom:10px}
+	.myBlogPage #hero .heroLists .ltCol .postgrid li .blogProfileHolder{max-height:430px;min-height:430px}
+	.myBlogPage #hero .heroLists .ltCol .postgrid li .blogProfileHolder .blogProfilePicHolder{height:270px}
+	.blogProfilePicHolder .thumb135{max-height:270px;min-height:270px}
+	.myBlogPage #hero .heroLists .ltCol .postgrid li .postgridFooter .button{margin-bottom:5px}
+}
+
+@media(min-width:768px) {
+	.themePage.home.index .RowOneColOne .postgrid.double .postgridHolder.withoutThumb{}
+	.themePage.home.index .themePage .smallerThumb .double .postgridHolder.withoutThumb .img-holder,
+	.themePage.home.index .themePage .smallerThumb .double .postgridHolder.withoutThumb .img-holder .lt-stacked-img .thumb135,
+	.themePage.home.index .themePage .smallerThumb .postgrid.double .postgridHolder.withoutThumb .dz-details{max-height:170px;min-height:170px}
+	.themePage.home.index .themePage .smallerThumb .double .postgridHolder.withoutThumb .img-holder .cnLNTitle{margin-bottom:10px}
+	.themePage .postgrid.double .postgridHolder.withoutThumb .dz-details{padding-left:0px}
+}
+
+@media(min-width:768px) and (max-width:1199px) {
+	.modal-body .controls-full button {
+		padding:15px 20px;
+	}
+}
